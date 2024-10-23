@@ -6,7 +6,7 @@ const Stats = () => {
             <div className="container">
                 <div className="stat">
                     <h2>150+</h2>
-                    <p>Zadowolonych Klijentów</p>
+                    <p>Zadowolonych Klientów</p>
                 </div>
                 <div className="stat">
                     <h2>15+</h2>

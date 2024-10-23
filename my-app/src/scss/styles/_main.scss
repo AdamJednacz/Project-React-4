@@ -1,5 +1,5 @@
 main{
-  background: linear-gradient(to top, #1F1F1F 40%, transparent 20%);
+  background: linear-gradient(to top, #1F1F1F 35%, transparent 20%);
   @include desktop{
     background: linear-gradient(to left, #1F1F1F 25%, transparent 20%);
 
@@ -17,8 +17,10 @@ main{
         font-size: 2.5rem;
         line-height: 48px;
         font-weight: 700;
+        margin-top: 24px;
         @include desktop{
           font-size: 3.5rem;
+          margin-top:0 ;
         }
       }
       h2{
@@ -62,9 +64,8 @@ main{
         align-items: center ;
         font-size:3rem;
         margin-top: 48px;
-        @include desktop{
-          margin-bottom: 16px;
-        }
+        margin-bottom: 16px;
+
         .icon{
           display: none;
           @include desktop{

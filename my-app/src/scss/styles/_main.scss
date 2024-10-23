@@ -1,0 +1,86 @@
+main{
+  background: linear-gradient(to top, #1F1F1F 40%, transparent 20%);
+  @include desktop{
+    background: linear-gradient(to left, #1F1F1F 25%, transparent 20%);
+
+  }
+  .container{
+    flex-direction: column;
+    @include desktop{
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    .main_text{
+      align-self: center;
+
+      h1{
+        font-size: 2.5rem;
+        line-height: 48px;
+        font-weight: 700;
+        @include desktop{
+          font-size: 3.5rem;
+        }
+      }
+      h2{
+        font-size: 1.5rem;
+        margin: 8px 0;
+        font-weight: 700;
+        @include desktop{
+          font-size: 2.5rem;
+          margin: 16px 0;
+        }
+      }
+      p{
+        font-weight: lighter;
+        font-size:1.25rem;
+        margin: 16px 0;
+        color: grey;
+        @include desktop{
+          margin:0;
+          font-size: 2rem;
+          width: 70%;
+        }
+      }
+      button{
+        font-weight:600;
+        font-size: 1.125rem;
+        border-radius: 15px;
+
+        background-color: #0D0B0B;
+        color: #ffffff;
+        padding: 18px 36px;
+        transition: all 0.5s ease-in-out;
+        border: 1px solid #ffffff;
+        &:hover{
+          border: 1px solid #0D0B0B;
+          background-color: #ffffff;
+          color: #0D0B0B;
+        }
+      }
+      .icons{
+        display: flex;
+        align-items: center ;
+        font-size:3rem;
+        margin-top: 48px;
+        @include desktop{
+          margin-bottom: 16px;
+        }
+        .icon{
+          display: none;
+          @include desktop{
+            display: block;
+            margin: 0 32px;
+          }
+        }
+      }
+
+    }
+    img{
+      width: 100%;
+      @include desktop{
+
+        width: 50%;
+      }
+    }
+  }
+}

@@ -34,7 +34,8 @@ const Header = () => {
                     <Link to="contact" smooth={true} duration={500} onClick={handleCloseMenu}
                           className="menu_item">Kontakt</Link>
                 </nav>
-                <button>Zapisz Się</button>
+                <button>Dołącz</button>
+
             </div>
         </header>
     );

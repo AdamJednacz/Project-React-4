@@ -1,5 +1,7 @@
 import React from 'react';
 import img1 from "../assets/trainers_1.png"
+import img2 from "../assets/trainers_2.png"
+
 
 const Trainers = () => {
     return (
@@ -13,8 +15,29 @@ const Trainers = () => {
                 <div className="trainers__cards">
                     <div className="trainers__cards__card">
                     <img src={img1} alt=""/>
+                        <p>Imię Nazwisko 1</p>
                     </div>
-                    {/*<div style={{backgroundImage:`url(${img1})`}} className="trainers__cards__card"></div>*/}
+                    <div className="trainers__cards__card">
+                        <img src={img2} alt=""/>
+                        <p>Imię Nazwisko 2</p>
+                    </div>
+                    <div className="trainers__cards__card">
+                        <img src={img1} alt=""/>
+                        <p>Imię Nazwisko 3</p>
+                    </div>
+                    <div className="trainers__cards__card">
+                        <img src={img2} alt=""/>
+                        <p>Imię Nazwisko 4</p>
+                    </div>
+                    <div className="trainers__cards__card">
+                        <img src={img1} alt=""/>
+                        <p>Imię Nazwisko 5</p>
+                    </div>
+                    <div className="trainers__cards__card">
+                        <img src={img2} alt=""/>
+                        <p>Imię Nazwisko 6</p>
+                    </div>
+
                 </div>
             </div>
         </section>

@@ -12,7 +12,7 @@ const Coaches = () => {
                     <img src={img2} alt=""/>
                 </div>
                 <div className="text">
-                    <h2>Poszukujesz Mentora</h2>
+                    <h2>Poszukujesz Mentora ?</h2>
                     <h1>Menotrzy</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     <button>Dowiedz się więcej</button>

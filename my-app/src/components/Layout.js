@@ -5,6 +5,7 @@ import Stats from "./Stats";
 import Why_Us from "./Why_Us";
 import Trainers from "./Trainers";
 import Coaches from "./Coaches";
+import Pricing from "./Pricing";
 
 const Layout = () => {
     return (
@@ -15,6 +16,7 @@ const Layout = () => {
             <Why_Us/>
             <Trainers/>
             <Coaches/>
+            <Pricing/>
         </>
     );
 };

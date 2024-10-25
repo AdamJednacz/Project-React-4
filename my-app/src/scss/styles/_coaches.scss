@@ -1,0 +1,93 @@
+#coaches{
+  padding: 32px 0;
+  @include desktop{
+    padding: 64px 0 ;
+  }
+  .container{
+    flex-direction: column-reverse;
+@include desktop{
+  flex-direction: row;
+
+
+}
+    .coaches_imgs{
+     display: none;
+      @include desktop{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+      }
+      img{
+
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        &:first-of-type{
+          @media(max-width: 1200px) and (min-width: 1000px) {
+            display: none;
+
+          }
+        }
+      }
+    }
+    .text{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      @include desktop{
+        text-align: left;
+        align-items: flex-start;
+        margin-left: 76px;
+        width: 60%;
+      }
+      h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgba(13,11,11,0.7);
+        margin-bottom: 16px;
+        @include desktop{
+          font-size: 2rem;
+        }
+      }
+      h1{
+        font-size: 2.5rem;
+        line-height: 48px;
+        font-weight: 700;
+        @include desktop{
+          font-size: 3.5rem;
+
+        }
+      }
+      p{
+        font-weight: lighter;
+        font-size:1.25rem;
+        margin: 24px 0;
+        color: grey;
+        @include desktop{
+          margin: 32px 0;
+          max-width: 70%;
+          letter-spacing: 1px;
+        }
+      }
+      button{
+        font-weight:600;
+        font-size: 1.125rem;
+        border-radius: 15px;
+        background-color: #0D0B0B;
+        color: #ffffff;
+        padding: 18px 36px;
+        transition: all 0.5s ease-in-out;
+        border: 1px solid #ffffff;
+        &:hover{
+          border: 1px solid #0D0B0B;
+          background-color: #ffffff;
+          color: #0D0B0B;
+        }
+      }
+    }
+  }
+
+}

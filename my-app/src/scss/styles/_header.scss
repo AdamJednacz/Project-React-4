@@ -10,13 +10,9 @@ header{
       cursor: pointer;
       display: block;
       z-index: 1001;
-      &.open{
-
-      }
       @include desktop {
         display: none;
       }
-
       .bar {
         display: block;
         width: 25px;
@@ -28,20 +24,16 @@ header{
         border-radius:32px ;
         z-index: 1000;
       }
-
       &.open .bar:nth-child(2) {
         opacity: 0;
       }
-
       &.open .bar:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
       }
-
       &.open .bar:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
       }
     }
-
 
     img{
       width: 30%;

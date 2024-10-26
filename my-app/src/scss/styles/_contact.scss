@@ -1,0 +1,107 @@
+#contact {
+  padding: 48px 0;
+  .container{
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @include desktop{
+      flex-wrap: nowrap;
+    }
+    .text{
+      color: #ffffff;
+      text-align: left;
+      margin-bottom: 16px;
+      max-width: 300px;
+      margin-right: 16px;
+      @include desktop{
+        max-width: 50%;
+
+
+      }
+      h2{
+        font-size: 1.5rem;
+        @include desktop{
+          font-size: 2rem;
+        }
+      }
+      h1{
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 16px 0 ;
+        @include desktop {
+          font-size: 4rem;
+        }
+      }
+      p{
+        color: rgba(255,255,255,0.5);
+        line-height: 22px;
+
+        @include desktop{
+          width: 50%;
+        }
+
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      h1 {
+        color: #ffffff;
+        margin: 16px 0;
+        font-size: 1.5rem;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        @include desktop {
+        flex-direction: row;
+
+        }
+      input {
+        padding: 16px;
+        width: 100%;
+        border: none;
+        font-weight: 500;
+      }
+    }
+      textarea{
+        padding: 16px;
+        width: 100%;
+        font-family: "Signika", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        @include desktop{
+
+          width: 92.767%;
+        }
+      }
+
+
+      button{
+        margin-top: 16px;
+        font-weight:600;
+        font-size: 1rem;
+        border-radius: 15px;
+        background-color: #ffffff;
+        color: #0D0B0B;
+        padding: 10px 64px;
+        transition: all 0.5s ease-in-out;
+        border: 1px solid #ffffff;
+        &:hover{
+          border: 1px solid #0D0B0B;
+          background-color: #0D0B0B;
+          color: #ffffff;
+        }
+        @include desktop{
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}

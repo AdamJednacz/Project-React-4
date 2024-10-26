@@ -6,6 +6,8 @@ import Why_Us from "./Why_Us";
 import Trainers from "./Trainers";
 import Coaches from "./Coaches";
 import Pricing from "./Pricing";
+import Opinions from "./Opinions";
+import Contact from "./Contact";
 
 const Layout = () => {
     return (
@@ -17,6 +19,8 @@ const Layout = () => {
             <Trainers/>
             <Coaches/>
             <Pricing/>
+            <Opinions/>
+            <Contact/>
         </>
     );
 };

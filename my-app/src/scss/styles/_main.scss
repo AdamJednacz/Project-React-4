@@ -79,6 +79,7 @@ main{
     }
     img{
       width: 100%;
+
       @include desktop{
 
         width: 50%;

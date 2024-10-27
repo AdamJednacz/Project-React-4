@@ -31,23 +31,23 @@
           font-size: 2.5rem;
           line-height: 48px;
           font-weight: 700;
+          margin-bottom: 16px;
           @include desktop{
             font-size: 3.5rem;
 
           }
+          p{
+            line-height: 22px;
+          }
         }
-
-
 
       }
       .buttons{
         display: flex;
-
         justify-content: space-between;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
         margin:32px 0 ;
-
         width: 100%;
         @include desktop{
           width: auto;
@@ -78,7 +78,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          flex-wrap: wrap-reverse;
+          flex-wrap: wrap;
 
         }
         .card{
@@ -149,7 +149,7 @@
             }
           }
           ul {
-            width: 80%;
+            width: 90%;
             margin-left: 16px;
 
             .has {

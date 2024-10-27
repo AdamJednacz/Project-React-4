@@ -8,6 +8,7 @@ import Coaches from "./Coaches";
 import Pricing from "./Pricing";
 import Opinions from "./Opinions";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Layout = () => {
     return (
@@ -21,6 +22,7 @@ const Layout = () => {
             <Pricing/>
             <Opinions/>
             <Contact/>
+            <Footer/>
         </>
     );
 };

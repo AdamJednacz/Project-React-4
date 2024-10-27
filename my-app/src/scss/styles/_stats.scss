@@ -1,7 +1,7 @@
 #stats {
   background-color: #1F1F1F;
   padding: 32px;
-
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   .container {
     flex-direction: column;
     @include desktop{

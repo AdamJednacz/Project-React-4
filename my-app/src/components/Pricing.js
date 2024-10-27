@@ -10,6 +10,7 @@ const Pricing = () => {
                     <div className="text">
                         <h2>Cennik</h2>
                         <h1>Dołącz do nas!</h1>
+                        <p>Zawieszenie karnetu - 20zł</p>
                     </div>
                     <div className="buttons">
                         <button className={`${activeSection === 'group' ? 'active':''}`} onClick={() => setActiveSection('group')}>Grupowe</button>

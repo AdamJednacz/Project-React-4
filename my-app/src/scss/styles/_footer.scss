@@ -1,0 +1,114 @@
+footer{
+  padding: 32px 0 0 ;
+  @include desktop{
+    padding: 48px 0 16px;
+  }
+  .container{
+    flex-direction: column;
+    align-items: flex-start;
+
+    img{
+      width: 250px;
+      margin-bottom: 16px;
+      @include desktop{
+        display: none;
+      }
+    }
+    .adress_mobile{
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0D0B0B;
+      margin: 8px 0;
+      @include desktop{
+        display: none;
+      }
+    }
+    .logo_d{
+      display: none;
+      @include desktop{
+        display: block;
+        margin-right: 32px;
+      }
+    }
+    .row{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+      @include desktop{
+        flex-direction: row;
+        &:first-of-type{
+          margin-bottom: 16px;
+        }
+      }
+    .col{
+      margin-bottom: 16px;
+      &:nth-of-type(2){
+        display: none;
+        @include desktop{
+          display: block;
+          min-width: 120px;
+        }
+      }
+      &:nth-of-type(4){
+        @include desktop{
+       min-width: 300px;
+        }
+      }
+      &:nth-of-type(3){
+        p{
+          margin-bottom: 4px;
+          font-weight: 700;
+          font-size: 1.125rem;
+          @include desktop{
+            margin-bottom: 8px;
+          }
+        }
+        span{
+          font-size: 1rem;
+        }
+      }
+
+      p{
+        margin-top: 8px;
+        color: rgba(0,0,0,0.7);
+        &:first-of-type{
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin-bottom: 16px;
+          color: #0D0B0B;
+        }
+        &:hover{
+          color: #0D0B0B;
+          font-weight: 700;
+        }
+
+      }
+      .icon{
+        margin-right: 8px;
+      }
+    }
+
+      .copy{
+        padding: 16px 0 16px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        @include desktop{
+          padding: 32px 0 16px;
+        }
+        &::before{
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 1px;
+          background-color: rgba(0,0,0,0.4);
+          margin: 0 0 32px;
+        }
+      }
+    }
+  }
+}

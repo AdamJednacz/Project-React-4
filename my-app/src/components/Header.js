@@ -30,7 +30,7 @@ const Header = () => {
                     <Link to="/trainers" smooth={true} duration={500} onClick={handleCloseMenu}
                           className="menu_item">Trenerzy</Link>
                     <Link to="pricing" smooth={true} duration={500} onClick={handleCloseMenu}
-                          className="menu_item">Zajęcia</Link>
+                          className="menu_item">Cennik</Link>
                     <Link to="contact" smooth={true} duration={500} onClick={handleCloseMenu}
                           className="menu_item">Kontakt</Link>
                 </nav>

@@ -1,114 +1,166 @@
-footer{
-  padding: 32px 0 0 ;
-  @include desktop{
+footer {
+  padding: 24px 16px ;
+  @include desktop {
     padding: 48px 0 16px;
   }
-  .container{
+
+  .container {
     flex-direction: column;
     align-items: flex-start;
 
-    img{
-      width: 250px;
+    img {
+      width: 200px;
       margin-bottom: 16px;
-      @include desktop{
-        display: none;
+      @include desktop {
+        width: 250px;
       }
     }
-    .adress_mobile{
+
+    .adress_mobile {
       font-size: 1.5rem;
       font-weight: 700;
       color: #0D0B0B;
       margin: 8px 0;
-      @include desktop{
+      @include desktop {
         display: none;
       }
     }
-    .logo_d{
-      display: none;
-      @include desktop{
-        display: block;
+    .link_m{
+      display: block;
+      @include desktop {
+        display: none;
+
         margin-right: 32px;
       }
     }
-    .row{
+    .logo_d {
+      display: none;
+      @include desktop {
+
+        display: block;
+        margin-right: 32px;
+
+      }
+
+    }
+
+    .row {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       width: 100%;
       flex-wrap: wrap;
-      @include desktop{
+      @include desktop {
         flex-direction: row;
-        &:first-of-type{
+        &:first-of-type {
           margin-bottom: 16px;
         }
       }
-    .col{
-      margin-bottom: 16px;
-      &:nth-of-type(2){
-        display: none;
-        @include desktop{
-          display: block;
-          min-width: 120px;
-        }
-      }
-      &:nth-of-type(4){
-        @include desktop{
-       min-width: 300px;
-        }
-      }
-      &:nth-of-type(3){
-        p{
-          margin-bottom: 4px;
-          font-weight: 700;
-          font-size: 1.125rem;
-          @include desktop{
-            margin-bottom: 8px;
+
+      .col {
+        margin-bottom: 16px;
+
+        &:nth-of-type(2) {
+          display: none;
+          @include desktop {
+            display: block;
+            min-width: 120px;
           }
         }
-        span{
-          font-size: 1rem;
+
+        &:nth-of-type(4) {
+          @include desktop {
+            min-width: 300px;
+          }
+        }
+
+        &:nth-of-type(3) {
+          p {
+            margin-bottom: 4px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            @include desktop {
+              margin-bottom: 8px;
+            }
+          }
+
+          span {
+            font-size: 1rem;
+          }
+        }
+
+
+        p {
+          margin-top: 8px;
+          color: rgba(0, 0, 0, 0.7);
+
+          &:first-of-type {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #0D0B0B;
+          }
+
+          &:hover {
+            color: #0D0B0B;
+            font-weight: 700;
+          }
+
+        }
+
+        .icon {
+          margin-right: 8px;
         }
       }
 
-      p{
-        margin-top: 8px;
-        color: rgba(0,0,0,0.7);
-        &:first-of-type{
-          font-size: 1.5rem;
-          font-weight: 700;
-          margin-bottom: 16px;
-          color: #0D0B0B;
-        }
-        &:hover{
-          color: #0D0B0B;
-          font-weight: 700;
-        }
-
-      }
-      .icon{
-        margin-right: 8px;
-      }
-    }
-
-      .copy{
+      .copy {
         padding: 16px 0 16px;
         width: 100%;
         text-align: center;
         position: relative;
-        @include desktop{
+        @include desktop {
           padding: 32px 0 16px;
         }
-        &::before{
+
+        &::before {
           content: "";
           display: block;
           position: absolute;
           top: 0;
           width: 100%;
           height: 1px;
-          background-color: rgba(0,0,0,0.4);
+          background-color: rgba(0, 0, 0, 0.4);
           margin: 0 0 32px;
         }
       }
     }
+  }
+}
+a{
+  text-decoration: none;
+  color: #0D0B0B;
+}
+.link {
+  border: 1px solid #0D0B0B;
+  background-color: #ffffff;
+  color: #0D0B0B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor:pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border: 1px solid #ffffff;
+    background-color: #0D0B0B;
+    color: #ffffff;
+  }
+  .button_icon{
+    margin-left: 8px;
   }
 }

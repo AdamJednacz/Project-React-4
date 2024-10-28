@@ -1,89 +1,154 @@
-main{
+:root{
+  --gradient: linear-gradient(45deg,
+          #feda75, /* Light Yellow */
+          #fa7e1e, /* Orange */
+          #d62976, /* Pink */
+          #962fbf, /* Purple */
+          #4f5bd5 /* Blue */
+  );
+}
+
+
+main {
   background: linear-gradient(to top, #1F1F1F 35%, transparent 20%);
-  @include desktop{
+  @include desktop {
     background: linear-gradient(to left, #1F1F1F 25%, transparent 20%);
 
   }
-  .container{
+
+  .container {
     flex-direction: column;
-    @include desktop{
+    @include desktop {
       flex-direction: row;
       align-items: flex-end;
     }
-    .main_text{
+
+    .main_text {
       align-self: center;
 
-      h1{
+      h1 {
         font-size: 2.5rem;
         line-height: 48px;
         font-weight: 700;
         margin-top: 24px;
-        @include desktop{
+        @include desktop {
           font-size: 3.5rem;
-          margin-top:0 ;
+          margin-top: 0;
         }
       }
-      h2{
+
+      h2 {
         font-size: 1.5rem;
         margin: 8px 0;
         font-weight: 700;
-        @include desktop{
+        @include desktop {
           font-size: 2.5rem;
           margin: 16px 0;
         }
       }
-      p{
+
+      p {
         font-weight: lighter;
-        font-size:1.25rem;
+        font-size: 1.25rem;
         margin: 16px 0;
         color: grey;
-        @include desktop{
-          margin:0;
+        @include desktop {
+          margin: 0;
           font-size: 2rem;
           width: 70%;
         }
       }
-      button{
-        font-weight:600;
-        font-size: 1.125rem;
-        border-radius: 15px;
 
-        background-color: #0D0B0B;
-        color: #ffffff;
-        padding: 18px 36px;
-        transition: all 0.5s ease-in-out;
-        border: 1px solid #ffffff;
-        &:hover{
-          border: 1px solid #0D0B0B;
-          background-color: #ffffff;
-          color: #0D0B0B;
-        }
-      }
-      .icons{
+
+
+      .buttons {
         display: flex;
-        align-items: center ;
-        font-size:3rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 3rem;
         margin-top: 48px;
         margin-bottom: 16px;
+        position: relative;
+        gap:16px;
+        @include desktop{
+          justify-content: unset;
+        }
 
-        .icon{
-          display: none;
-          cursor:pointer;
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          font-weight: 600;
+          font-size: 1.125rem;
+          border-radius: 15px;
+          width: 100%;
+          max-width: 290px;
+          background-color: #0D0B0B;
+          color: #ffffff;
+          padding: 18px 36px;
+          transition: all 0.5s ease-in-out;
+          border: 1px solid #ffffff;
+
           @include desktop{
+            width: auto;
+            max-width: unset;
+          }
+          &:first-of-type {
+
+            &:hover {
+              border: 1px solid #0D0B0B;
+              background-color: #ffffff;
+              color: #0D0B0B;
+            }
+          }
+
+          &:nth-of-type(2) {
+            background-color: #3b5998;
+
+            &:hover {
+              border: 1px solid #3b5998;
+              background-color: #ffffff;
+              color: #3b5998;
+            }
+          }
+
+          &:nth-of-type(3) {
+            background-size: 200%;
+            background-position: left;
+            background-image: var(--gradient);
+
+            &:hover {
+              background-position: right;
+
+
+            }
+          }
+        }
+        .icon {
+          font-size: 1.5rem;
+          display: block;
+          margin-right: 8px;
+          cursor: pointer;
+          @include desktop {
+            font-size: 1.5rem;
             display: block;
-            margin: 0 32px;
+            margin-right: 8px;
           }
         }
       }
 
     }
-    img{
+
+    img {
       width: 100%;
 
-      @include desktop{
+      @include desktop {
 
         width: 50%;
       }
     }
   }
+
 }

@@ -1,19 +1,30 @@
 import React from 'react';
 import logo from "../assets/logo.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope, faLocationDot, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+
     return (
         <footer>
             <div className="container">
-                <img src={logo} alt=""/>
-                <p className="adress_mobile">Kolejowa 15A, 32-080 Zabierzów</p>
+                {/*<img src={logo} alt=""/>*/}
+                {/*<p className="adress_mobile">Kolejowa 15A, 32-080 Zabierzów</p>*/}
+                {/*<a className="link_m link"*/}
+                {/*   href="https://www.google.com/maps/dir/?api=1&amp;destination=Power+%26+Beauty&amp;destination_place_id=ChIJAWH9lGlYFkcRoFrvmdLGa1c"*/}
+                {/*   target="_self" data-type="url">*/}
+                {/*    Wskaż na Mapie Google*/}
+                {/*</a>*/}
                 <div className="row">
-                    <div className="logo_d col">
-                        <img className="logo_d " src={logo} alt=""/>
+                    <div className="col">
+                        <img className=" " src={logo} alt=""/>
                         <p>Kolejowa 15A, 32-080 Zabierzów</p>
+                        <a
+                           href="https://www.google.com/maps/dir/?api=1&amp;destination=Power+%26+Beauty&amp;destination_place_id=ChIJAWH9lGlYFkcRoFrvmdLGa1c"
+                           target="_self" data-type="url">
+                            <button className="link">Wskaż na Mapie Google <FontAwesomeIcon className="button_icon" icon={faLocationDot} /></button>
+                        </a>
                     </div>
                     <div className="col">
                         <p>Menu</p>

@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from "../assets/logo.png"
 import { Link } from 'react-scroll';
 import { Link as LinkR } from "react-router-dom";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const [isSticky, setSticky] = useState(false);
     const handleOpenMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -13,8 +13,25 @@ const Header = () => {
         setIsOpen(false);
     };
 
+    const handleScroll = () => {
+        if (window.scrollY > 0) {
+            setSticky(true);
+        } else {
+            setSticky(false);
+        }
+    };
+
+    // Dodanie nasłuchiwania scrolla
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     return (
-        <header>
+        <header className={`${isSticky ? 'sticky' : ''}`}>
             <div className="container">
             <img src={logo} alt=""/>
                 <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={handleOpenMenu}>

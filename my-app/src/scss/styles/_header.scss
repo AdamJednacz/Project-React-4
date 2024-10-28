@@ -1,10 +1,22 @@
 header{
   padding: 24px 0 ;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 10000;
+  transition: all ease-in-out 0.3s;
 
+  &.sticky{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  }
   @include desktop{
     background: linear-gradient(to left, #1F1F1F 25%, transparent 20%);
+    box-shadow: unset;
+    position: unset;
   }
   .container{
+
 
     .hamburger {
       cursor: pointer;
@@ -44,7 +56,7 @@ header{
       }
     }
     .menu {
-      position: absolute;
+      position: fixed;
       top: 50%;
       bottom: 0;
       left: 50%;

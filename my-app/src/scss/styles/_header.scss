@@ -12,8 +12,11 @@ header{
   }
   @include desktop{
     background: linear-gradient(to left, #1F1F1F 25%, transparent 20%);
-    box-shadow: unset;
+;
     position: unset;
+    &.sticky{
+      box-shadow: unset
+    }
   }
   .container{
 

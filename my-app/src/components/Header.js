@@ -40,10 +40,10 @@ const Header = () => {
                     <span className="bar"></span>
                 </div>
                 <nav className={`menu ${isOpen ? 'open' : ''}`}>
-                    <Link to="/" smooth={true} duration={500} onClick={handleCloseMenu}
-                          className="menu_item">Strona Główna</Link>
-                    <Link to="/about_us" smooth={true} duration={500} onClick={handleCloseMenu}
-                          className="menu_item">O nas</Link>
+                    <LinkR to="/" smooth={true} duration={500} onClick={handleCloseMenu}
+                          className="menu_item">Strona Główna</LinkR>
+                    <LinkR to="/about_us" smooth={true} duration={500} onClick={handleCloseMenu}
+                          className="menu_item">O nas</LinkR>
                     <Link to="/trainers" smooth={true} duration={500} onClick={handleCloseMenu}
                           className="menu_item">Trenerzy</Link>
                     <Link to="pricing" smooth={true} duration={500} onClick={handleCloseMenu}

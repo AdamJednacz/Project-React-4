@@ -27,6 +27,7 @@
         margin: 16px 0;
         color: grey;
         @include desktop{
+
           width: 70%;
         }
       }
@@ -51,14 +52,17 @@
           display: flex;
           align-items: flex-start;
           justify-content: center;
-
           margin-bottom: 32px;
+          transition: all 0.3s ease-in-out;
           @include desktop{
             align-items: center;
             width: 50%;
             min-width: 360px;
             max-height: 90px;
             max-width: 420px;
+          }
+          &:hover{
+            scale: 1.05;
           }
           img{
             margin-right: 16px;
@@ -76,6 +80,7 @@
             font-size: 1rem;
             font-weight: lighter;
             color: grey;
+            letter-spacing: 1px;
 
           }
         }

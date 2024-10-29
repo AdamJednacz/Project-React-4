@@ -9,20 +9,32 @@ import Pricing from "./Pricing";
 import Opinions from "./Opinions";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import AboutUs from "./About_Us";
 
+import {useParams} from "react-router";
 const Layout = () => {
+    const { pageType } = useParams();
+
     return (
         <>
-            <Header/>
-            <Main/>
-            <Stats/>
-            <Why_Us/>
-            <Trainers/>
-            <Coaches/>
-            <Pricing/>
-            <Opinions/>
-            <Contact/>
-            <Footer/>
+            <Header />
+
+            {pageType === 'about_us' ? (
+                <AboutUs />
+            ) : (
+                <>
+                    <Main />
+                    <Stats />
+                    <Why_Us />
+                    <Trainers />
+                    <Coaches />
+                    <Pricing />
+                    <Opinions />
+                    <Contact />
+                </>
+            )}
+
+            <Footer />
         </>
     );
 };

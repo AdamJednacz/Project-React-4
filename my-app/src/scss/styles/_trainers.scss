@@ -38,18 +38,19 @@
       gap: 16px;
       flex-wrap: wrap;
       @include desktop{
+        flex-wrap: nowrap;
+        flex-direction: row;
       margin-top: 32px;
         gap: 32px;
       }
       &__card{
-
-       width: 45%;
+        cursor: pointer;
         position: relative;
         border-radius: 30px;
         max-width: 200px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         @include desktop{
-          max-width: 250px;
+          max-width:200px;
         }
         &:hover{
           &::before{

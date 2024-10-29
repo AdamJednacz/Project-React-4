@@ -1,6 +1,7 @@
 import React from 'react';
 import img1 from "../assets/trainers_1.png"
 import img2 from "../assets/trainers_2.png"
+import { Link as LinkR } from "react-router-dom";
 
 
 const Trainers = () => {
@@ -13,30 +14,30 @@ const Trainers = () => {
                         labore et dolore magna aliqua. </p>
                 </div>
                 <div className="trainers__cards">
-                    <div className="trainers__cards__card">
+                    <LinkR to="/about_us"  className="trainers__cards__card">
                     <img src={img1} alt=""/>
-                        <p>Imię Nazwisko 1</p>
-                    </div>
-                    <div className="trainers__cards__card">
+                        <p>Jan Kowlaski</p>
+                    </LinkR>
+                    <LinkR to="/about_us"  className="trainers__cards__card">
                         <img src={img2} alt=""/>
-                        <p>Imię Nazwisko 2</p>
-                    </div>
-                    <div className="trainers__cards__card">
+                        <p>Jan Kowalski</p>
+                    </LinkR>
+                    <LinkR to="/about_us"  className="trainers__cards__card">
                         <img src={img1} alt=""/>
-                        <p>Imię Nazwisko 3</p>
-                    </div>
-                    <div className="trainers__cards__card">
+                        <p>Jan Kowlaski</p>
+                    </LinkR>
+                    <LinkR to="/about_us"  className="trainers__cards__card">
                         <img src={img2} alt=""/>
-                        <p>Imię Nazwisko 4</p>
-                    </div>
-                    <div className="trainers__cards__card">
+                        <p>Jan Kowalski</p>
+                    </LinkR>
+                    <LinkR to="/about_us"  className="trainers__cards__card">
                         <img src={img1} alt=""/>
-                        <p>Imię Nazwisko 5</p>
-                    </div>
-                    <div className="trainers__cards__card">
+                        <p>Jan Kowlaski</p>
+                    </LinkR>
+                    <LinkR to="/about_us"  className="trainers__cards__card">
                         <img src={img2} alt=""/>
-                        <p>Imię Nazwisko 6</p>
-                    </div>
+                        <p>Jan Kowalski</p>
+                    </LinkR>
 
                 </div>
             </div>

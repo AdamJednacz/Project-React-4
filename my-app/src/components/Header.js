@@ -3,7 +3,7 @@ import logo from "../assets/logo.png"
 import { Link } from 'react-scroll';
 import {Link as LinkR, useLocation, useNavigate} from "react-router-dom";
 
-const Header = () => {
+const Header = ({pageType}) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isSticky, setSticky] = useState(false);
     const { pathname } = useLocation();
@@ -41,7 +41,7 @@ const Header = () => {
 
 
     return (
-        <header className={`${isSticky ? 'sticky' : ''}`}>
+        <header className={`${isSticky ? 'sticky' : ''} ${pageType === "about_us" ? 'about_us_header' : ''}`}>
             <div className="container">
             <img src={logo} alt=""/>
                 <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={handleOpenMenu}>
@@ -52,15 +52,16 @@ const Header = () => {
                 <nav className={`menu ${isOpen ? 'open' : ''}`}>
                     <LinkR to="/" smooth={true} duration={500} onClick={handleCloseMenu}
                           className="menu_item">Strona Główna</LinkR>
-                    <LinkR to="/about_us" smooth={true} duration={500} onClick={handleCloseMenu}
+                    <LinkR to="/o_nas" smooth={true} duration={500} onClick={handleCloseMenu}
                           className="menu_item">O nas</LinkR>
-
-                   <Link to="trainers" smooth={true} duration={500} onClick={() => { handleNavigateAndScroll('trainers'); handleCloseMenu(); }}
+                    <LinkR to="/grafik" smooth={true} duration={500} onClick={handleCloseMenu}
+                           className="menu_item">Grafik</LinkR>
+                   <Link to="trenerzy" smooth={true} duration={500} onClick={() => { handleNavigateAndScroll('trainers'); handleCloseMenu(); }}
                           className="menu_item">Trenerzy</Link>
 
-                    <Link to="pricing" smooth={true} duration={500} onClick={() => { handleNavigateAndScroll('pricing'); handleCloseMenu(); }}
+                    <Link to="cennik" smooth={true} duration={500} onClick={() => { handleNavigateAndScroll('pricing'); handleCloseMenu(); }}
                           className="menu_item">Cennik</Link>
-                    <Link to="contact" smooth={true} duration={500} onClick={() => { handleNavigateAndScroll('contact'); handleCloseMenu(); }}
+                    <Link to="kontakt" smooth={true} duration={500} onClick={() => { handleNavigateAndScroll('contact'); handleCloseMenu(); }}
                           className="menu_item">Kontakt</Link>
                 </nav>
                 <button>Dołącz</button>

@@ -20,14 +20,22 @@ const Contact = () => {
                 <form>
                     <h1>Napisz do nas!</h1>
                     <div className="row">
-                        <input type="text" id="name" name="name" placeholder="Imię"/>
-                        <input type="text" id="surname" name="surname" placeholder="Nazwisko"/>
+                        <input type="text" id="name" name="name" placeholder="Imię" required/>
+                        <input type="text" id="surname" name="surname" placeholder="Nazwisko" required/>
                     </div>
                     <div className="row">
-                        <input type="email" id="email" name="email" placeholder="Email"/>
-                        <input type="number" id="number" name="number" placeholder="Nr.Telefonu"/>
+                        <input type="email" id="email" name="email" placeholder="Email" />
+                        <input
+                            type="tel"
+                            id="number"
+                            name="number"
+                            placeholder="Nr. Telefonu"
+                            pattern="[0-9]{9,15}"
+                            inputMode="numeric"
+                            required
+                        />
                     </div>
-                    <textarea rows={5}  placeholder="Wiadomość"/>
+                    <textarea rows={5} placeholder="Wiadomość" required/>
 
                     <button type="submit">Wyślij</button>
                 </form>

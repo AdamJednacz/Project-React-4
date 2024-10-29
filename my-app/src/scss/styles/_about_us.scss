@@ -1,0 +1,37 @@
+.about_us{
+
+
+
+  .container{
+    flex-direction: column;
+    .row{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 32px;
+      &:first-of-type{
+        flex-direction: row;
+      }
+    .text{
+      h1{
+
+      }
+      p{
+
+      }
+    }
+
+
+      img{
+      width: 200px;
+      }
+      h2{
+
+      }
+      ul{
+        li{
+
+        }
+      }
+    }
+  }
+}

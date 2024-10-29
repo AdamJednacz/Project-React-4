@@ -36,8 +36,17 @@
             font-size: 3.5rem;
 
           }
-          p{
-            line-height: 22px;
+
+
+        }
+        p{
+          line-height: 22px;
+        }
+        .cards_link{
+          line-height: 22px;
+          text-decoration: underline;
+          &:hover{
+            color: green;
           }
         }
 

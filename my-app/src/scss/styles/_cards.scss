@@ -1,0 +1,23 @@
+#cards{
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to left, #1F1F1F 25%, transparent 20%);
+    height:425px;
+  }
+  .container{
+
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+
+    img{
+      width: 200px;
+      border-radius: 15px;
+    }
+  }
+}

@@ -10,8 +10,10 @@ import Opinions from "./Opinions";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import AboutUs from "./About_Us";
+import Cards from "./Cards"; // Import the Cards component
 
-import {useParams} from "react-router";
+import { useParams } from "react-router";
+
 const Layout = () => {
     const { pageType } = useParams();
 
@@ -21,6 +23,8 @@ const Layout = () => {
 
             {pageType === 'about_us' ? (
                 <AboutUs />
+            ) : pageType === 'cards' ? (
+                <Cards /> // Render Cards component when pageType is 'cards'
             ) : (
                 <>
                     <Main />

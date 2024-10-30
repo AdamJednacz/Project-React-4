@@ -13,7 +13,7 @@ const Stats = () => {
                     <p>Lat doświadczenia</p>
                 </div>
                 <div className="stat">
-                    <h2>6+</h2>
+                    <h2>6</h2>
                     <p>Certyfikowanych Trenerów</p>
                 </div>
                 <div className="stat">

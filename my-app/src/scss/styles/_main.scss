@@ -10,7 +10,6 @@
 
 
 main {
-  background: linear-gradient(to top, #1F1F1F 35%, transparent 20%);
   @include desktop {
     background: linear-gradient(to left, #1F1F1F 25%, transparent 20%);
 

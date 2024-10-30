@@ -14,8 +14,9 @@
       justify-content: center;
       color: #ffffff;
       margin: 16px 0;
+
       @include desktop{
-        align-items: flex-start;
+
       }
       h2 {
         font-size: 2rem;

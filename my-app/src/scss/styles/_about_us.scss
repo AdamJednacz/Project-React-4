@@ -1,5 +1,8 @@
 .about_us{
 
+  @include desktop{
+    padding: 32px 0 ;
+  }
 
 
   .container{

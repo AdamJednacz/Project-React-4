@@ -11,7 +11,8 @@ const Pricing = () => {
                         <h2>Cennik</h2>
                         <h1>Dołącz do nas!</h1>
                         <p>Zawieszenie karnetu - 20zł</p>
-                        <LinkR to="/cards" className="cards_link">Akceptujemy również karty</LinkR>
+                        <LinkR to="/karty" className="cards_link">Akceptujemy również karty</LinkR>
+                        <LinkR to="/karty" className="cards_link">Akceptujemy również karty</LinkR>
                     </div>
                     <div className="buttons">
                         <button className={`${activeSection === 'group' ? 'active':''}`} onClick={() => setActiveSection('group')}>Grupowe</button>

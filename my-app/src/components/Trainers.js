@@ -14,27 +14,27 @@ const Trainers = () => {
                         labore et dolore magna aliqua. </p>
                 </div>
                 <div className="trainers__cards">
-                    <LinkR to="/about_us"  className="trainers__cards__card">
+                    <LinkR to="/o_nas"  className="trainers__cards__card">
                     <img src={img1} alt=""/>
                         <p>Jan Kowlaski</p>
                     </LinkR>
-                    <LinkR to="/about_us"  className="trainers__cards__card">
+                    <LinkR to="/o_nas"  className="trainers__cards__card">
                         <img src={img2} alt=""/>
                         <p>Jan Kowalski</p>
                     </LinkR>
-                    <LinkR to="/about_us"  className="trainers__cards__card">
+                    <LinkR to="/o_nas"  className="trainers__cards__card">
                         <img src={img1} alt=""/>
                         <p>Jan Kowlaski</p>
                     </LinkR>
-                    <LinkR to="/about_us"  className="trainers__cards__card">
+                    <LinkR to="/o_nas"  className="trainers__cards__card">
                         <img src={img2} alt=""/>
                         <p>Jan Kowalski</p>
                     </LinkR>
-                    <LinkR to="/about_us"  className="trainers__cards__card">
+                    <LinkR to="/o_nas"  className="trainers__cards__card">
                         <img src={img1} alt=""/>
                         <p>Jan Kowlaski</p>
                     </LinkR>
-                    <LinkR to="/about_us"  className="trainers__cards__card">
+                    <LinkR to="/o_nas"  className="trainers__cards__card">
                         <img src={img2} alt=""/>
                         <p>Jan Kowalski</p>
                     </LinkR>

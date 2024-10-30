@@ -8,28 +8,145 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 32px;
-      &:first-of-type{
+      padding: 16px;
+      background-color: #1F1F1F;
+      color: #FFFFFF;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+      @include desktop{
         flex-direction: row;
-      }
-    .text{
-      h1{
+        padding: 32px;
+        justify-content: space-between;
 
       }
-      p{
+      &:first-of-type{
+        @include desktop{
+          flex-direction: row-reverse;
+        }
+        .text{
+            @include desktop {
+              max-width: 50%;
+            }
+        }
+      }
+      &:nth-of-type(2){
+        flex-direction: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include desktop{
+          padding: 32px;
+          flex-direction: row;
+
+        }
+        .text{
+          @include desktop {
+            max-width: 50%;
+            text-align: center;
+            margin: 0 auto;
+          }
+        }
+      }
+      &:nth-of-type(3){
+        padding: 32px;
+        @include desktop{
+          flex-direction: column;
+
+        }
+      }
+
+      .text{
+          display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        @include desktop{
+          justify-content: center;
+
+
+        }
+        h1{
+          font-size: 2.5rem;
+          line-height: 48px;
+          font-weight: 700;
+          margin-left: 16px;
+          @include desktop{
+            margin: 16px;
+            font-size: 3.5rem;
+          }
+        }
+        p{
+          font-weight: lighter;
+          font-size:1rem;
+          margin: 16px;
+          color: #ffffff;
+          line-height: 22px;
+          align-self: center;
+          @include desktop{
+            align-self: unset;
+            font-size:1.125rem;
+            line-height: 25px;
+
+          }
+        }
+
 
       }
-    }
 
 
       img{
-      width: 200px;
+        width: 100%;
+        margin-bottom: 16px;
+        align-self: center;
+
+      }
+      .img1{
+        @include desktop{
+        max-width: 400px;
+      }
+      }
+      .img2 {
+        max-width: 600px;
+
+        @include desktop {
+
+
+        }
       }
       h2{
+        font-size: 1.5rem;
+        font-weight: 600;
 
+
+
+        @include desktop{
+          font-size: 2rem;
+          width: 60%;
+        }
       }
-      ul{
-        li{
+      .p_row{
 
+        font-size:1rem;
+        margin: 16px 0;
+        color: #ffffff;
+        line-height: 22px;
+
+        font-weight:500 ;
+        @include desktop{
+
+          font-size:1.5rem;
+          line-height: 25px;
+
+        }
+      }
+      ul{ list-style: inside;
+
+        li{
+          margin-bottom: 8px;
+          @include desktop{
+
+            font-size:1.125rem;
+            line-height: 25px;
+
+          }
         }
       }
     }

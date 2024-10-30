@@ -91,40 +91,41 @@ main {
           padding: 18px 36px;
           transition: all 0.5s ease-in-out;
           border: 1px solid #ffffff;
-
           @include desktop{
             width: auto;
             max-width: unset;
           }
-          &:first-of-type {
 
-            &:hover {
-              border: 1px solid #0D0B0B;
-              background-color: #ffffff;
-              color: #0D0B0B;
-            }
+
+
+
+        }
+        .sign_in{
+          &:hover {
+            border: 1px solid #0D0B0B;
+            background-color: #ffffff;
+            color: #0D0B0B;
           }
 
-          &:nth-of-type(2) {
-            background-color: #3b5998;
+        }
+        .fb {
+          background-color: #3b5998;
 
-            &:hover {
-              border: 1px solid #3b5998;
-              background-color: #ffffff;
-              color: #3b5998;
-            }
+          &:hover {
+            border: 1px solid #3b5998;
+            background-color: #ffffff;
+            color: #3b5998;
           }
+        }
+        .ig {
+          background-size: 200%;
+          background-position: left;
+          background-image: var(--gradient);
+          border:solid 1px transparent;
+          &:hover {
+            background-position: right;
+            color: #FFFFFF;
 
-          &:nth-of-type(3) {
-            background-size: 200%;
-            background-position: left;
-            background-image: var(--gradient);
-
-            &:hover {
-              background-position: right;
-
-
-            }
           }
         }
         .icon {

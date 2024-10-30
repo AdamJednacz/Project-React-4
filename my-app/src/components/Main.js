@@ -15,9 +15,9 @@ const Main = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. </p>
                     <div className="buttons">
-                        <button><FontAwesomeIcon className="icon" icon={faRightToBracket} />Zapisz się</button>
-                        <button><FontAwesomeIcon className="icon" icon={faFacebook}/>Facebook</button>
-                        <button><FontAwesomeIcon className="icon" icon={faInstagram}/>Instagram</button>
+                        <a><button className="sign_in"><FontAwesomeIcon className="icon" icon={faRightToBracket} />Zapisz się</button></a>
+                        <a href="https://www.facebook.com/profile.php?id=61565021120925"><button className="fb"><FontAwesomeIcon className="icon" icon={faFacebook}/>Facebook</button></a>
+                        <a href="https://www.instagram.com/powerandbeauty2024/"><button className="ig"><FontAwesomeIcon className="icon" icon={faInstagram}/>Instagram</button></a>
                     </div>
                 </div>
                 <img src={img1} alt=""/>

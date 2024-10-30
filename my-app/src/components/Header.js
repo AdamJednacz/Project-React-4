@@ -41,7 +41,7 @@ const Header = ({pageType}) => {
 
 
     return (
-        <header className={`${isSticky ? 'sticky' : ''} ${pageType === "about_us" ? 'about_us_header' : ''}`}>
+        <header className={`${isSticky ? 'sticky' : ''} ${pageType === "o_nas" ? 'about_us_header' : ''}`}>
             <div className="container">
             <img src={logo} alt=""/>
                 <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={handleOpenMenu}>
@@ -65,7 +65,6 @@ const Header = ({pageType}) => {
                           className="menu_item">Kontakt</Link>
                 </nav>
                 <button>Dołącz</button>
-
             </div>
         </header>
     );

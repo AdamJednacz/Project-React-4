@@ -141,13 +141,10 @@ main {
       }
 
     }
-
     img {
       width: 100%;
-
       @include desktop {
-
-        width: 50%;
+       width: 50%;
       }
     }
   }

@@ -1,17 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import img1 from "../assets/Zdjęcie_lady.webp"
 import img2 from "../assets/gym.webp"
-
+import img3 from "../assets/img_women.avif"
+import {faDumbbell} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const AboutUs = () => {
+
     return (
         <section className="about_us">
             <div className="container">
                 <div className="row">
                     <img className="img1" src={img1} alt=""/>
                     <div className="text">
-
                         <h1>O nas</h1>
-
                         <p>Historia obecnego Studia Treningowego Power & Beauty rozpoczęła się kilka lat temu, kiedy to
                             jego
                             właścicielem został Rafał Preis. Niewielką siłownię przekształcił w prawdziwy klub fitness,
@@ -21,7 +22,6 @@ const AboutUs = () => {
                             klubie
                             przez kilka ostatnich lat.</p>
                     </div>
-
                 </div>
                 <div className="row">
                     <img className="img2" src={img2} alt=""/>
@@ -52,7 +52,23 @@ const AboutUs = () => {
                 </div>
                 <div className="row">
                     <h1>Poznaj Nasz Zespół</h1>
+                    <p className="p_adnotation">Najedź aby dowiedzieć się więcej</p>
+                    <p className="p_adnotation _mobile">Kliknij aby dowiedzieć się więcej</p>
+                    <div className="cards">
+                        {[...Array(6)].map((_, index) => (
+                            <div
+                                key={index}
+                                className="card"
 
+                            >
+                                <img src={img3} alt=""/>
+                                <div className="card-content">
+                                    <h3>Jan Kowalski<FontAwesomeIcon className="icon" icon={faDumbbell}/></h3>
+                                    <p>Specjalizuję się przede wszystkim w treningu siłowym. Prowadzę swoich podopiecznych tak, aby krok po kroku dostrzegali zmiany swojej sylwetki. Dbam o ich samopoczucie i wiarę w ich możliwości.</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

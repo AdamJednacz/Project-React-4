@@ -83,13 +83,12 @@
         }
       }
       .cards{
-        @include desktop{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          gap: 32px;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+
         .card{
           display: flex;
           flex-direction: column;
@@ -100,7 +99,10 @@
           min-width: 240px;
           max-width: 320px;
           transition: all 0.5s ease-in-out;
-
+          margin-bottom: 32px;
+          @include desktop{
+            margin-bottom: 0;
+          }
           &:last-of-type{
             background-color: #0D0B0B;
             color: #ffffff;

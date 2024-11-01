@@ -9,7 +9,9 @@
     flex-direction: column;
     .row{
       display: flex;
+
       flex-direction: column;
+      border-radius: 30px;
       margin-bottom: 32px;
       padding: 16px;
       background-color: #1F1F1F;
@@ -58,15 +60,13 @@
       }
       &:nth-of-type(4){
         flex-direction: column;
-        padding-top: 48px;
+        padding: 48px 16px;
         h1{
           font-size: 2.5rem;
           line-height: 48px;
           font-weight: 700;
-
           text-align: center;
           @include desktop{
-
             font-size: 3.5rem;
           }
         }
@@ -85,7 +85,6 @@
             align-self: unset;
             font-size:1.125rem;
             line-height: 25px;
-
           }
 
         }
@@ -104,8 +103,6 @@
         color: #ffffff;
         @include desktop{
           justify-content: center;
-
-
         }
         h1{
           font-size: 2.5rem;
@@ -128,19 +125,14 @@
             align-self: unset;
             font-size:1.125rem;
             line-height: 25px;
-
           }
         }
-
-
       }
-
 
       img{
         width: 100%;
         margin-bottom: 16px;
         align-self: center;
-
       }
       .img1{
         @include desktop{
@@ -149,11 +141,6 @@
       }
       .img2 {
         max-width: 600px;
-
-        @include desktop {
-
-
-        }
       }
       h2{
         font-size: 1.5rem;
@@ -164,35 +151,28 @@
         }
       }
       .p_row{
-
         font-size:1rem;
         margin: 16px 0;
         color: #ffffff;
         line-height: 22px;
-
         font-weight:500 ;
         @include desktop{
-
           font-size:1.5rem;
           line-height: 25px;
-
         }
       }
-      ul{ list-style: inside;
-
+      ul{
+        list-style: inside;
         li{
           margin-bottom: 8px;
           @include desktop{
-
             font-size:1.125rem;
             line-height: 25px;
-
           }
         }
       }
       .cards{
         display: flex;
-
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
@@ -200,10 +180,8 @@
         max-width: 1600px;
         @include desktop{
           gap: 32px;
-
         }
         .card {
-
           width: 18rem;
           height: 24rem;
           overflow: hidden;
@@ -212,12 +190,9 @@
           color: #FFFFFF;
           box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
           @include desktop{
-
             width: 24rem;
             height: 36rem;
-
           }
-
           img {
             position: absolute;
             object-fit: cover;
@@ -228,10 +203,9 @@
             opacity: 1;
             transition: opacity .2s ease-out;
           }
-
           h3 {
             position: absolute;
-          inset: auto auto 30px 25px;
+            inset: auto auto 30px 25px;
             margin: 0;
             transition: inset .3s .3s ease-out;
             font-family: 'Roboto Condensed', sans-serif;
@@ -284,14 +258,10 @@
             opacity: 0.5;
           }
         }
-
         .material-symbols-outlined {
           vertical-align: middle;
         }
-
       }
-
-
     }
   }
 }

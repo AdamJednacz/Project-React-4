@@ -22,13 +22,14 @@ const Footer = () => {
                     <div className="col">
                         <img className=" " src={logo} alt=""/>
                         <p>Kolejowa 15A, 32-080 Zabierzów</p>
+                        <div className="links">
                         <a
                            href="https://www.google.com/maps/dir/?api=1&amp;destination=Power+%26+Beauty&amp;destination_place_id=ChIJAWH9lGlYFkcRoFrvmdLGa1c"
                            target="_self" data-type="url">
                             <button className="link">Wskaż na Mapie Google <FontAwesomeIcon className="button_icon" icon={faLocationDot} /></button>
                         </a>
                         <LinkR to="/karty" className="cards_link"><img src={img1} alt=""/>Akceptujemy również karty</LinkR>
-
+                        </div>
                     </div>
                     <div className="col">
                         <p>Menu</p>

@@ -13,7 +13,7 @@ import AboutUs from "./About_Us";
 import Cards from "./Cards"; // Import the Cards component
 
 import { useParams } from "react-router";
-import Chart from "./Chart";
+import Table from "./Table";
 
 const Layout = () => {
     const { pageType } = useParams();
@@ -27,7 +27,7 @@ const Layout = () => {
             ) : pageType === 'karty' ? (
                 <Cards /> // Render Cards component when pageType is 'cards'
             ) : pageType ==='grafik'?(
-                <Chart/>
+                <Table/>
             ): (
                 <>
                     <Main />

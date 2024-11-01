@@ -20,6 +20,9 @@ header{
     &.about_us_header{
       background: unset;
     }
+    &.table_header{
+      background: unset;
+    }
   }
   .container{
 
@@ -53,12 +56,15 @@ header{
       }
     }
 
-    img{
+    .logo{
       width: 30%;
-      max-width: 140px;
+
       @include desktop{
         width: 10%;
 
+      }
+      img{
+        max-width: 140px;
       }
     }
     .menu {
@@ -135,7 +141,7 @@ header{
       display: none;
       font-size: 1.125rem;
       border-radius: 15px;
-      border: none;
+      border: solid 1px transparent;
       background-color: #0D0B0B;
       color: #ffffff;
       padding: 16px 32px;
@@ -145,6 +151,7 @@ header{
       }
 
       &:hover{
+        border: solid 1px #0D0B0B;
         background-color: #ffffff;
         color: #0D0B0B;
       }

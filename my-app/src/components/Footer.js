@@ -3,6 +3,8 @@ import logo from "../assets/logo.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faLocationDot, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons";
+import {Link as LinkR} from "react-router-dom";
+import img1 from "../assets/karta-multisport_classic.webp";
 
 const Footer = () => {
 
@@ -25,6 +27,8 @@ const Footer = () => {
                            target="_self" data-type="url">
                             <button className="link">Wskaż na Mapie Google <FontAwesomeIcon className="button_icon" icon={faLocationDot} /></button>
                         </a>
+                        <LinkR to="/karty" className="cards_link"><img src={img1} alt=""/>Akceptujemy również karty</LinkR>
+
                     </div>
                     <div className="col">
                         <p>Menu</p>

@@ -28,11 +28,9 @@ const AboutUs = () => {
                     <div className="text">
 
                         <p>Power & Beauty to nie tylko miejsce, to społeczność,która zapewnia naszym Klientom doskonałe
-                            warunki do treningów,progresów,pokonywania swoich ograniczeń oraz relaksu. Swoim Klientom
-                            zapewnia wręcz domową atmosferę – możecie Państwo przekonać się, że zawarte u nas znajomości
-                            i przyjaźnie zaprocentują w życiu codziennym.</p>
-                        <p>Zapraszamy wszystkich! Panie i panów, dziewczęta i chłopców, młodych i starszych (choć wciąż
-                            młodych duchem). Każdy znajdzie zajęcia odpowiadające jego zainteresowaniom, potrzebom. Pod
+                            warunki do treningów,progresów oraz pokonywania swoich ograniczeń
+                        Zapraszamy wszystkich! Panie i panów, dziewczęta i chłopców, młodych i starszych.
+                            Każdy znajdzie zajęcia odpowiadające jego zainteresowaniom, potrzebom. Pod
                             okiem instruktorów poprawicie kondycję, zapomnicie o troskach, a problemy zdrowotne
                             przestaną stanowić wymówkę od podejmowania sportowych wyzwań.</p>
                     </div>

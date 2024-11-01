@@ -57,7 +57,21 @@ footer {
           margin-bottom: 16px;
         }
       }
+      .cards_link{
+        display: flex;
+        align-items: center;
 
+        line-height: 22px;
+        text-decoration: underline;
+        &:hover{
+          color: green;
+        }
+        img{
+          width: 10%;
+          border-radius: 10px;
+          margin: 0 8px 0 0 ;
+        }
+      }
       .col {
         margin-bottom: 16px;
 

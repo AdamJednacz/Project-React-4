@@ -1,13 +1,14 @@
-.about_us{
+.about_us {
 
-  @include desktop{
-    padding: 32px 0 ;
+  @include desktop {
+    padding: 32px 0;
   }
 
 
-  .container{
+  .container {
     flex-direction: column;
-    .row{
+
+    .row {
       display: flex;
 
       flex-direction: column;
@@ -17,170 +18,191 @@
       background-color: #1F1F1F;
       color: #FFFFFF;
       box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-      @include desktop{
+      @include desktop {
         flex-direction: row;
 
         justify-content: space-between;
 
       }
-      &:first-of-type{
-        @include desktop{
+
+      &:first-of-type {
+        @include desktop {
           flex-direction: row-reverse;
         }
-        .text{
-            @include desktop {
-              max-width: 50%;
-            }
+
+        .text {
+          @include desktop {
+            max-width: 50%;
+          }
         }
       }
-      &:nth-of-type(2){
+
+      &:nth-of-type(2) {
         flex-direction: unset;
         flex-wrap: wrap;
         justify-content: center;
 
-        @include desktop{
+        @include desktop {
 
           flex-direction: row;
 
         }
-        .text{
+
+        .text {
           @include desktop {
             max-width: 50%;
-            text-align: center;
             margin: 0 auto;
           }
         }
       }
-      &:nth-of-type(3){
+
+      &:nth-of-type(3) {
         padding: 48px;
-        @include desktop{
+        @include desktop {
           flex-direction: column;
 
         }
       }
-      &:nth-of-type(4){
+
+      &:nth-of-type(4) {
         flex-direction: column;
         padding: 48px 16px;
-        h1{
+
+        h1 {
           font-size: 2.5rem;
           line-height: 48px;
           font-weight: 700;
           text-align: center;
-          @include desktop{
+          @include desktop {
             font-size: 3.5rem;
           }
         }
 
-        .p_adnotation{
+        .p_adnotation {
           display: none;
           font-weight: lighter;
-          font-size:1rem;
+          font-size: 1rem;
           text-align: center;
           color: #ffffff;
           line-height: 22px;
           margin: 16px;
           text-decoration: underline;
-          @include desktop{
+          @include desktop {
             display: block;
             align-self: unset;
-            font-size:1.125rem;
+            font-size: 1.125rem;
             line-height: 25px;
           }
 
         }
-        ._mobile{
+
+        ._mobile {
           display: block;
           text-decoration: underline;
-          @include desktop{
+          @include desktop {
             display: none;
           }
         }
 
       }
-      .text{
-          display: flex;
+
+      .text {
+        display: flex;
         flex-direction: column;
         color: #ffffff;
-        @include desktop{
+        @include desktop {
           justify-content: center;
         }
-        h1{
+
+        h1 {
           font-size: 2.5rem;
           line-height: 48px;
           font-weight: 700;
           margin-left: 16px;
-          @include desktop{
+          @include desktop {
             margin: 16px;
             font-size: 3.5rem;
           }
         }
-        p{
+
+        p {
           font-weight: lighter;
-          font-size:1rem;
+          font-size: 1rem;
           margin: 16px;
           color: #ffffff;
           line-height: 22px;
           align-self: center;
-          @include desktop{
+          @include desktop {
             align-self: unset;
-            font-size:1.125rem;
+            font-size: 1.125rem;
             line-height: 25px;
           }
         }
       }
 
-      img{
+      img {
         width: 100%;
         margin-bottom: 16px;
         align-self: center;
-      }
-      .img1{
-        @include desktop{
-        max-width: 400px;
+      @include desktop {
+        margin-bottom: 0;
       }
       }
+
+      .img1 {
+        border-radius: 30px;
+        @include desktop {
+          max-width: 400px;
+        }
+      }
+
       .img2 {
-        max-width: 600px;
+        border-radius: 30px;
+        @include desktop {
+          max-width: 400px;
+        }
       }
-      h2{
+      h2 {
         font-size: 1.5rem;
         font-weight: 600;
-        @include desktop{
+        @include desktop {
           font-size: 2rem;
           width: 60%;
         }
       }
-      .p_row{
-        font-size:1rem;
+
+      .p_row {
+        font-size: 1rem;
         margin: 16px 0;
         color: #ffffff;
         line-height: 22px;
-        font-weight:500 ;
-        @include desktop{
-          font-size:1.5rem;
+        font-weight: 500;
+        @include desktop {
+          font-size: 1.5rem;
           line-height: 25px;
         }
       }
-      ul{
+
+      ul {
         list-style: inside;
-        li{
+
+        li {
           margin-bottom: 8px;
-          @include desktop{
-            font-size:1.125rem;
+          @include desktop {
+            font-size: 1.125rem;
             line-height: 25px;
           }
         }
       }
-      .cards{
+
+      .cards {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap:32px ;
+        gap: 32px;
         max-width: 1600px;
-        @include desktop{
-          gap: 32px;
-        }
+
         .card {
           width: 18rem;
           height: 24rem;
@@ -189,10 +211,11 @@
           position: relative;
           color: #FFFFFF;
           box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-          @include desktop{
+          @include desktop {
             width: 24rem;
             height: 36rem;
           }
+
           img {
             position: absolute;
             object-fit: cover;
@@ -203,6 +226,7 @@
             opacity: 1;
             transition: opacity .2s ease-out;
           }
+
           h3 {
             position: absolute;
             inset: auto auto 30px 25px;
@@ -212,52 +236,53 @@
             font-weight: normal;
             text-transform: uppercase;
             font-size: 1.5rem;
-            @include desktop{
+            @include desktop {
               font-size: 2rem;
               inset: auto auto 30px 30px;
             }
           }
 
-          p{
+          p {
             position: absolute;
             opacity: 0;
             max-width: 90%;
             transition: opacity .3s ease-out;
             line-height: 22px;
-            @include desktop{
+            @include desktop {
               max-width: 80%;
             }
           }
 
           p {
             inset: auto auto 80px 15px;
-            @include desktop{
+            @include desktop {
               inset: auto auto 80px 30px;
             }
           }
 
-          .icon{
+          .icon {
             margin-left: 16px;
           }
 
-          &:hover h3 ,&:focus  h3{
+          &:hover h3, &:focus h3 {
             inset: auto auto 300px 15px;
             transition: inset .3s ease-out;
-            @include desktop{
+            @include desktop {
               inset: auto auto 220px 30px;
             }
           }
 
-          &:hover p,&:focus  p {
+          &:hover p, &:focus p {
             opacity: 1;
             transition: opacity .5s .1s ease-in;
           }
 
-          &:hover img ,&:focus img {
+          &:hover img, &:focus img {
             transition: opacity .3s ease-in;
             opacity: 0.5;
           }
         }
+
         .material-symbols-outlined {
           vertical-align: middle;
         }

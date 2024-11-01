@@ -13,13 +13,13 @@
       flex-direction: column;
       border-radius: 30px;
       margin-bottom: 32px;
-      padding: 16px;
+      padding: 24px;
       background-color: #1F1F1F;
       color: #FFFFFF;
       box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
       @include desktop{
         flex-direction: row;
-        padding: 32px;
+
         justify-content: space-between;
 
       }
@@ -39,7 +39,7 @@
         justify-content: center;
 
         @include desktop{
-          padding: 32px;
+
           flex-direction: row;
 
         }

@@ -44,7 +44,7 @@ const AboutUs = () => {
 
                     <ul>
                         <li>250 m<sup>2</sup> przestrzeni sportowej,</li>
-                        <li>strefa treningów grupowych</li>
+                        <li>strefa treningów grupowych,</li>
                         <li> miejsca parkingowe,</li>
                         <li>szatnie + prysznic,</li>
                         <li>wolne ciężary i maszyny</li>

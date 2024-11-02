@@ -65,7 +65,8 @@ const Header = ({pageType}) => {
                     <Link to="kontakt" smooth={true} duration={500} onClick={() => { handleNavigateAndScroll('contact'); handleCloseMenu(); }}
                           className="menu_item">Kontakt</Link>
                 </nav>
-                <button>Dołącz</button>
+                <Link to="kontakt" smooth={true} duration={500} onClick={() => { handleNavigateAndScroll('contact'); handleCloseMenu(); }}
+                      ><button>Dołącz</button></Link>
             </div>
         </header>
     );

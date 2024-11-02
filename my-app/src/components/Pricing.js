@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link as LinkR } from "react-router-dom";
+import {Link} from "react-scroll";
 const Pricing = () => {
     const [activeSection, setActiveSection] = useState('gym'); // Default section
 
@@ -33,7 +34,7 @@ const Pricing = () => {
                                             grupowych</p></li>
                                         <li className="has_not"><p className="li_text">Dostęp do siłowni</p></li>
                                     </ul>
-                                    <button className="card_button">Kontakt</button>
+                                    <Link  to="kontakt" smooth={true} duration={500}><button className="card_button">Kontakt</button></Link>
                                 </div>
                                 <div className="card">
                                     <h2>4 wejścia</h2>
@@ -44,7 +45,7 @@ const Pricing = () => {
                                             grupowych</p></li>
                                         <li className="has_not"><p className="li_text">Dostęp do siłowni</p></li>
                                     </ul>
-                                    <button className="card_button">Kontakt</button>
+                                    <Link  to="kontakt" smooth={true} duration={500}><button className="card_button">Kontakt</button></Link>
                                 </div>
                                 <div className="card">
                                     <h2>8 wejść</h2>
@@ -54,7 +55,7 @@ const Pricing = () => {
                                         <li className="has"><p className="li_text">Dostęp do wszystkich zajęć grupowych</p></li>
                                         <li className="has_not"><p className="li_text">Dostęp do siłowni</p></li>
                                     </ul>
-                                    <button className="card_button">Kontakt</button>
+                                    <Link  to="kontakt" smooth={true} duration={500}><button className="card_button">Kontakt</button></Link>
                                 </div>
                                 <div className="card">
                                     <h2>12 wejść</h2>
@@ -64,7 +65,7 @@ const Pricing = () => {
                                         <li className="has"><p className="li_text">Dostęp do wszystkich zajęć grupowych</p></li>
                                         <li className="has_not"><p className="li_text">Dostęp do siłowni</p></li>
                                     </ul>
-                                    <button className="card_button">Kontakt</button>
+                                    <Link  to="kontakt" smooth={true} duration={500}><button className="card_button">Kontakt</button></Link>
                                 </div>
                             </>
                         )}
@@ -80,7 +81,7 @@ const Pricing = () => {
                                         <li className="has_not"><p className="li_text">Zajęcia grupowe</p></li>
                                         <li className="has_not"><p className="li_text">Zajęcia z trenerem</p></li>
                                     </ul>
-                                    <button className="card_button">Kontakt</button>
+                                    <Link  to="kontakt" smooth={true} duration={500}><button className="card_button">Kontakt</button></Link>
                                 </div>
                                 <div className="card">
                                     <h2>Open 1 miesiąc</h2>
@@ -92,7 +93,7 @@ const Pricing = () => {
                                         <li className="has_not"><p className="li_text">Zajęcia grupowe</p></li>
                                         <li className="has_not"><p className="li_text">Zajęcia z trenerem</p></li>
                                     </ul>
-                                    <button className="card_button">Kontakt</button>
+                                    <Link  to="kontakt" smooth={true} duration={500}><button className="card_button">Kontakt</button></Link>
                                 </div>
                                 <div className="card">
                                 <h2>Open 3 miesiące</h2>
@@ -104,7 +105,7 @@ const Pricing = () => {
                                         <li className="has_not"><p className="li_text">Zajęcia grupowe</p></li>
                                         <li className="has_not"><p className="li_text">Zajęcia z trenerem</p></li>
                                     </ul>
-                                    <button className="card_button">Kontakt</button>
+                                    <Link  to="kontakt" smooth={true} duration={500}><button className="card_button">Kontakt</button></Link>
                                 </div>
                                 <div className="card">
                                 <h2>Open 6 miesięcy</h2>
@@ -116,7 +117,7 @@ const Pricing = () => {
                                         <li className="has_not"><p className="li_text">Zajęcia grupowe</p></li>
                                         <li className="has_not"><p className="li_text">Zajęcia z trenerem</p></li>
                                     </ul>
-                                    <button className="card_button">Kontakt</button>
+                                    <Link  to="kontakt" smooth={true} duration={500}><button className="card_button">Kontakt</button></Link>
                                 </div>
                                 <div className="card">
                                 <h2>Open 12 + 1 miesięcy</h2>
@@ -128,7 +129,7 @@ const Pricing = () => {
                                         <li className="has_not"><p className="li_text">Zajęcia grupowe</p></li>
                                         <li className="has_not"><p className="li_text">Zajęcia z trenerem</p></li>
                                     </ul>
-                                    <button className="card_button">Kontakt</button>
+                                    <Link  to="kontakt" smooth={true} duration={500}><button className="card_button">Kontakt</button></Link>
                                 </div>
 
                             </>
@@ -144,7 +145,7 @@ const Pricing = () => {
                                         </li>
                                         <li className="has"><p className="li_text">Zajęcia grupowe</p></li>
                                     </ul>
-                                    <button className="card_button">Kontakt</button>
+                                    <Link  to="kontakt" smooth={true} duration={500}><button className="card_button">Kontakt</button></Link>
                                 </div>
                                 <div className="card">
                                     <h2>Trenerski Open</h2>
@@ -154,7 +155,7 @@ const Pricing = () => {
                                         <li className="has"><p className="li_text">Treningi personalne z trenerem</p></li>
                                         <li className="has"><p className="li_text">Gwarancja stałej ceny karnetu</p></li>
                                     </ul>
-                                    <button className="card_button">Kontakt</button>
+                                    <Link  to="kontakt" smooth={true} duration={500}><button className="card_button">Kontakt</button></Link>
                                 </div>
                             </>
                         )}

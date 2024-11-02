@@ -187,6 +187,7 @@
             }
           }
           &_button{
+            width: 100%;
             margin-top: 32px;
             font-weight:600;
             font-size: 1.125rem;
@@ -210,4 +211,8 @@
 
 @keyframes zIndexHack {
   0%,100%{z-index: 90;}
+}
+
+Link{
+  width: 100%;
 }

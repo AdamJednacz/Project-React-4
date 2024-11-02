@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import img1 from "../assets/Zdjęcie_lady.webp"
 import img2 from "../assets/gym.webp"
 import img3 from "../assets/img_women.avif"
 import {faDumbbell} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Questions from "./Questions";
 const AboutUs = () => {
 
     return (
@@ -68,6 +69,7 @@ const AboutUs = () => {
                         ))}
                     </div>
                 </div>
+                <Questions/>
             </div>
         </section>
     );

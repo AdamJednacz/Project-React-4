@@ -1,0 +1,26 @@
+
+:root{
+  --text--color: #0D0B0B;
+  --button--hover--color:#0D0B0B;
+  --button--background--color: #0D0B0B;
+  --button--text--color: #ffffff;
+  --primary--color: #0D0B0B;
+  --background--color: #FFFFFF;
+  --grey:grey;
+  --gradient--bg:#1f1f1f;
+  --box--shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --button--header-border:transparent;
+}
+
+.darkmode {
+  --text--color: #ffffff;
+  --button--hover--color:#ffffff;
+  --button--background--color: #ffffff;
+  --button--text--color: #0D0B0B;
+  --primary--color: #ffffff;
+  --background--color: #0D0B0B;
+  --grey: #ffffff;
+  --gradient--bg:#ffffff;
+  --box--shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  --button--header-border:#0D0B0B;
+}

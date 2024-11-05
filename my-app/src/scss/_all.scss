@@ -15,8 +15,9 @@
 body{
   font-family: "Signika", sans-serif;
   font-optical-sizing: auto;
-
+  transition: all 0.5s ease-in-out;
   font-style: normal;
   font-variation-settings:
           "GRAD" 0;
+  background-color: var(--background--color);
 }

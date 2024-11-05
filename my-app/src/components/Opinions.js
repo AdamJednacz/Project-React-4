@@ -1,7 +1,7 @@
 import React from 'react';
-import star from "../assets/star.png";
-import left from "../assets/left_button.png";
-import right from "../assets/right_button.png";
+
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faAngleLeft, faAngleRight, faStar} from "@fortawesome/free-solid-svg-icons";
 
 const Opinions = () => {
     const data = [
@@ -24,7 +24,7 @@ const Opinions = () => {
                             <h2>{d.name}</h2>
                             <div className="stars">
                                 {[...Array(d.stars)].map((_, i) => (
-                                    <img key={i} src={star} alt="star" />
+                                    <FontAwesomeIcon className="star" key={i} icon={faStar} />
                                 ))}
                             </div>
                             <p>{d.text}</p>
@@ -32,20 +32,8 @@ const Opinions = () => {
                     ))}
                 </div>
                 <div className="opinions_cards_buttons">
-                    <div
-                        className="opinions_cards_buttons_button"
-                        style={{
-                            backgroundImage: `url(${left})`, backgroundSize: 'auto',
-                            backgroundRepeat: 'no-repeat',
-                        }}
-                    ></div>
-                    <div
-                        className="opinions_cards_buttons_button"
-                        style={{
-                            backgroundImage: `url(${right})`, backgroundSize: 'auto',
-                            backgroundRepeat: 'no-repeat',
-                        }}
-                    ></div>
+                    <FontAwesomeIcon className="opinions_cards_buttons_button" icon={faAngleLeft} />
+                    <FontAwesomeIcon className="opinions_cards_buttons_button" icon={faAngleRight} />
                 </div>
             </div>
         </section>

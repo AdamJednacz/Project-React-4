@@ -17,6 +17,7 @@
         font-size: 2.5rem;
         line-height: 48px;
         font-weight: 700;
+        color: var(--text--color);
         @include desktop{
           font-size: 3.5rem;
         }
@@ -25,7 +26,7 @@
         font-weight: lighter;
         font-size:1.25rem;
         margin: 16px 0;
-        color: grey;
+        color: var(--grey);
         @include desktop{
 
           width: 70%;
@@ -39,14 +40,15 @@
       }
       &__cards{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         margin-top: 32px;
+
+        align-items: center;
+        justify-content: center;
         @include desktop{
           margin-top: 0;
-          flex-direction: row;
-          flex-wrap: wrap;
-         align-items: center;
-          justify-content: center;
+
+
         }
         &__card{
           display: flex;
@@ -54,9 +56,9 @@
           justify-content: center;
           margin-bottom: 32px;
           transition: all 0.3s ease-in-out;
+          max-width: 300px;
           @include desktop{
             align-items: center;
-            width: 50%;
             min-width: 360px;
             max-height: 90px;
             max-width: 420px;
@@ -75,11 +77,12 @@
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 16px;
+            color: var(--text--color);
           }
           p{
             font-size: 1rem;
             font-weight: lighter;
-            color: grey;
+            color: var(--grey);
             letter-spacing: 1px;
 
           }
@@ -89,6 +92,7 @@
       &__imgs{
         display: none;
         @include desktop{
+
           display: flex;
           gap: 16px;
         }
@@ -102,7 +106,7 @@
           }
           img{
 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: var(--box--shadow);
             border-radius: 35px;
           }
           .img_3{

@@ -11,13 +11,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="container">
-                {/*<img src={logo} alt=""/>*/}
-                {/*<p className="adress_mobile">Kolejowa 15A, 32-080 Zabierzów</p>*/}
-                {/*<a className="link_m link"*/}
-                {/*   href="https://www.google.com/maps/dir/?api=1&amp;destination=Power+%26+Beauty&amp;destination_place_id=ChIJAWH9lGlYFkcRoFrvmdLGa1c"*/}
-                {/*   target="_self" data-type="url">*/}
-                {/*    Wskaż na Mapie Google*/}
-                {/*</a>*/}
+
                 <div className="row">
                     <div className="col">
                         <img className=" " src={logo} alt=""/>

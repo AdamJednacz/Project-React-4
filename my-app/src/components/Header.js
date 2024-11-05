@@ -6,6 +6,8 @@ import {Link as LinkR, useLocation, useNavigate} from "react-router-dom";
 const Header = ({pageType}) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isSticky, setSticky] = useState(false);
+    const [isDarkMode,setDarkMode] = useState(false);
+
     const { pathname } = useLocation();
     const navigate = useNavigate();
     const handleOpenMenu = () => {
@@ -40,8 +42,26 @@ const Header = ({pageType}) => {
     };
 
 
+
+    useEffect(() => {
+        const savedDarkMode = localStorage.getItem('darkmode') === 'true';
+        setDarkMode(savedDarkMode);
+        if (savedDarkMode) {
+            document.body.classList.add('darkmode');
+        }
+        console.log('Loaded dark mode from storage:', savedDarkMode);
+    }, []);
+
+    const toggleDarkMode = () => {
+        const newDarkMode = !isDarkMode;
+        setDarkMode(newDarkMode);
+        document.body.classList.toggle('darkmode', newDarkMode);
+        localStorage.setItem('darkmode', newDarkMode);
+    };
+
+
     return (
-        <header className={`${isSticky ? 'sticky' : ''} ${pageType === "o_nas" ? 'about_us_header' : ''}${pageType === "grafik" ? 'table_header' : ''}`}>
+        <header className={`${isSticky ? 'sticky' : ''} ${pageType === "o_nas" ? 'about_us_header' : ''}${pageType === "grafik" ? 'table_header' : ''} ${pageType === "karty" ? 'cards_header' : ''}`}>
             <div className="container">
                 <LinkR className="logo" to="/"><img src={logo} alt=""/></LinkR>
 
@@ -67,6 +87,7 @@ const Header = ({pageType}) => {
                 </nav>
                 <Link to="kontakt" smooth={true} duration={500} onClick={() => { handleNavigateAndScroll('contact'); handleCloseMenu(); }}
                       ><button>Dołącz</button></Link>
+                <button onClick={toggleDarkMode}>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</button>
             </div>
         </header>
     );

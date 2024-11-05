@@ -1,6 +1,6 @@
 footer {
   padding: 24px 16px ;
-  box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box--shadow);
   @include desktop {
     padding: 48px 0 16px;
   }
@@ -17,20 +17,10 @@ footer {
       }
     }
 
-    .adress_mobile {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #0D0B0B;
-      margin: 8px 0;
-      @include desktop {
-        display: none;
-      }
-    }
     .link_m{
       display: block;
       @include desktop {
         display: none;
-
         margin-right: 32px;
       }
     }
@@ -51,40 +41,26 @@ footer {
       justify-content: space-between;
       width: 100%;
       flex-wrap: wrap;
+      gap: 16px;
+      color: var(--text--color);
+
+
       @include desktop {
+
         flex-direction: row;
         &:first-of-type {
           margin-bottom: 16px;
         }
       }
-      .links {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        @include desktop{
-          flex-direction: row;
-        }
-        .cards_link {
-          display: flex;
-          align-items: center;
 
-          line-height: 22px;
-          text-decoration: underline;
-
-          &:hover {
-            color: green;
-          }
-
-          img {
-            width: 10%;
-            border-radius: 10px;
-            margin: 0 8px 0 0;
-          }
-        }
-      }
       .col {
         margin-bottom: 16px;
+        &:nth-of-type(1){
 
+          @include desktop{
+            max-width: 30%;
+          }
+        }
         &:nth-of-type(2) {
           display: none;
           @include desktop {
@@ -95,7 +71,7 @@ footer {
 
         &:nth-of-type(4) {
           @include desktop {
-            min-width: 300px;
+          min-width: 255px;
           }
         }
 
@@ -104,8 +80,10 @@ footer {
             margin-bottom: 4px;
             font-weight: 700;
             font-size: 1.125rem;
+
             @include desktop {
               margin-bottom: 8px;
+
             }
           }
 
@@ -116,18 +94,18 @@ footer {
 
 
         p {
-          margin-top: 8px;
-          color: rgba(0, 0, 0, 0.7);
+
+
 
           &:first-of-type {
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 16px;
-            color: #0D0B0B;
+            margin-top: 0;
           }
-
+          margin: 4px 0;
           &:hover {
-            color: #0D0B0B;
+
             font-weight: 700;
           }
 
@@ -135,6 +113,32 @@ footer {
 
         .icon {
           margin-right: 8px;
+        }
+        .links {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          gap: 16px;
+
+
+          .cards_link {
+            display: flex;
+            align-items: center;
+
+            line-height: 22px;
+            text-decoration: underline;
+
+            &:hover {
+              color: green;
+            }
+
+            img {
+              width: 40%;
+              border-radius: 10px;
+              margin: 0 8px 0 0;
+              max-width: 100px;
+            }
+          }
         }
       }
 
@@ -154,7 +158,7 @@ footer {
           top: 0;
           width: 100%;
           height: 1px;
-          background-color: rgba(0, 0, 0, 0.4);
+          background-color: var(--primary--color);
           margin: 0 0 32px;
         }
       }
@@ -163,12 +167,14 @@ footer {
 }
 a{
   text-decoration: none;
-  color: #0D0B0B;
+  color: var(--text--color);
+
+
 }
 .link {
-  border: 1px solid #0D0B0B;
-  background-color: #ffffff;
-  color: #0D0B0B;
+  border: 1px solid var(--primary--color);
+  background-color: var(--button--background--color);
+  color: var(--button--text--color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,11 +185,12 @@ a{
   padding: 10px 20px;
   cursor:pointer;
   transition: all 0.3s ease-in-out;
-
+  box-shadow: var(--box--shadow);
+  width: 100%;
   &:hover {
-    border: 1px solid #ffffff;
-    background-color: #0D0B0B;
-    color: #ffffff;
+    border: 1px solid var(--text--color);
+    background-color:var(--background--color);
+    color:  var(--text--color);
   }
   .button_icon{
     margin-left: 8px;

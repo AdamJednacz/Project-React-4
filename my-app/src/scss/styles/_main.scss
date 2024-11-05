@@ -11,7 +11,7 @@
 
 main {
   @include desktop {
-    background: linear-gradient(to left, #1F1F1F 25%, transparent 20%);
+    background: linear-gradient(to left, var(--gradient--bg) 25%, transparent 20%);
 
   }
 
@@ -29,7 +29,7 @@ main {
         font-size: 2.5rem;
         line-height: 48px;
         font-weight: 700;
-
+        color: var(--text--color);
         @include desktop {
           font-size: 3.5rem;
 
@@ -40,6 +40,7 @@ main {
         font-size: 1.5rem;
         margin: 8px 0;
         font-weight: 700;
+        color: var(--text--color);
         @include desktop {
           font-size: 2.5rem;
           margin: 16px 0;
@@ -50,7 +51,7 @@ main {
         font-weight: lighter;
         font-size: 1.25rem;
         margin: 16px 0;
-        color: grey;
+        color: var(--grey);
         @include desktop {
 
           margin: 0;
@@ -79,7 +80,7 @@ main {
           display: flex;
           align-items: center;
           justify-content: center;
-
+          box-shadow: var(--box--shadow);
           font-weight: 600;
           font-size: 1.125rem;
           border-radius: 15px;
@@ -100,16 +101,19 @@ main {
 
         }
         .sign_in{
+          background-color: var(--button--background--color);
+          color: var(--button--text--color);
+
           &:hover {
-            border: 1px solid #0D0B0B;
-            background-color: #ffffff;
-            color: #0D0B0B;
+            border: solid 1px var(--button--hover--color);
+            background-color: var(--background--color);
+            color: var(--button--hover--color);
           }
 
         }
         .fb {
           background-color: #3b5998;
-
+          border: 1px solid #3b5998;
           &:hover {
             border: 1px solid #3b5998;
             background-color: #ffffff;
@@ -148,5 +152,4 @@ main {
       }
     }
   }
-
 }

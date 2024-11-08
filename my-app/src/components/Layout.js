@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from "./Header";
 import Main from "./Main";
 import Stats from "./Stats";
@@ -17,10 +17,26 @@ import Table from "./Table";
 
 const Layout = () => {
     const { pageType } = useParams();
+    const [isDarkMode,setDarkMode] = useState(false);
+    const toggleDarkMode = () => {
+        const newDarkMode = !isDarkMode;
+        setDarkMode(newDarkMode);
+        document.body.classList.toggle('darkmode', newDarkMode);
+        localStorage.setItem('darkmode', newDarkMode);
+
+    };
+    useEffect(() => {
+        const savedDarkMode = localStorage.getItem('darkmode') === 'true';
+        setDarkMode(savedDarkMode);
+        if (savedDarkMode) {
+            document.body.classList.add('darkmode');
+        }
+        console.log('Loaded dark mode from storage:', savedDarkMode);
+    }, []);
 
     return (
         <>
-            <Header pageType={pageType} />
+            <Header pageType={pageType} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
 
             {pageType === 'o_nas' ? (
                 <AboutUs />
@@ -41,7 +57,7 @@ const Layout = () => {
                 </>
             )}
 
-            <Footer />
+            <Footer isDarkMode={isDarkMode}  />
         </>
     );
 };

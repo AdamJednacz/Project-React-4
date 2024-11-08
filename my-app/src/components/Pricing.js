@@ -15,10 +15,20 @@ const Pricing = () => {
                         <LinkR to="/karty" className="cards_link">Akceptujemy również karty</LinkR>
 
                     </div>
-                    <div className="buttons">
-                        <button className={`${activeSection === 'group' ? 'active':''}`} onClick={() => setActiveSection('group')}>Grupowe</button>
-                        <button className={`${activeSection === 'gym' ? 'active':''}`} onClick={() => setActiveSection('gym')}>Siłownia</button>
-                        <button className={`${activeSection === 'special' ? 'active':''}`} onClick={() => setActiveSection('special')}>Special</button>
+                    <div
+                        className={`buttons ${
+                            activeSection === 'group' ? 'active-group' : activeSection === 'gym' ? 'active-gym' : 'active-special'
+                        }`}
+                    >
+                        <button className={`${activeSection === 'group' ? 'active' : ''}`}
+                                onClick={() => setActiveSection('group')}>Grupowe
+                        </button>
+                        <button className={`${activeSection === 'gym' ? 'active' : ''}`}
+                                onClick={() => setActiveSection('gym')}>Siłownia
+                        </button>
+                        <button className={`${activeSection === 'special' ? 'active' : ''}`}
+                                onClick={() => setActiveSection('special')}>Special
+                        </button>
                     </div>
                 </div>
                 <div className="row">

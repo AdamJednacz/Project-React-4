@@ -5,6 +5,7 @@
   }
   .container{
     flex-direction: column;
+    overflow: hidden;
     .text{
       text-align: center;
       margin-bottom: 32px;
@@ -23,62 +24,70 @@
         }
       }
     }
-    .opinions_cards {
-      display: flex;
 
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 32px;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      max-width: 100%;
-      @include desktop{
 
-      }
-      &_card{
 
-        border: solid 1px var(--text--color);
-        border-radius: 30px;
-        padding: 24px;
-        max-width: 232px;
-        margin: 0 16px;
-        color: var(--text--color);
-        h2{
-          font-size: 1.5rem;
-          font-weight: 700;
-        }
-        .stars{
-          margin: 16px 0 ;
-          .star{
-            color: var(--text--color);
-            margin-right: 4px;
+      .opinions_cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 32px;
+        scroll-behavior: smooth;
+        position: relative;
+        transition: transform 0.5s ease;
+        width: 100%;
+        max-width: 100%;
+        &_card {
+          flex: 0 0 232px;
+          border: solid 1px var(--text--color);
+          border-radius: 30px;
+          padding: 24px;
+          max-width: 232px;
+           box-sizing: border-box;
+          margin: 0 16px;
+          color: var(--text--color);
+
+          h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+
+          .stars {
+            margin: 16px 0;
+
+            .star {
+              color: var(--text--color);
+              margin-right: 4px;
+            }
+          }
+
+          p {
+            line-height: 20px;
           }
         }
-        p{
-          line-height: 20px;
-        }
-      }
-      &_buttons{
-        display: flex;
-        gap: 16px;
 
-        &_button{
-          color: var(--background--color);
-          border: solid 2px var(--text--color);
-          background-color: var(--button--hover--color);
-          background-position: center;
+        &_buttons {
+          display: flex;
+          gap: 16px;
+
+          &_button {
+            color: var(--background--color);
+            border: solid 2px var(--text--color);
+            background-color: var(--button--hover--color);
+            background-position: center;
             border-radius: 50%;
-          width: 25px;
-          height: 25px;
-          padding: 10px;
-          cursor: pointer;
-          &:nth-of-type(2){
-            color: var(--button--hover--color);
-            background-color: var(--background--color);
+            width: 25px;
+            height: 25px;
+            padding: 10px;
+            cursor: pointer;
 
+            &:nth-of-type(2) {
+              color: var(--button--hover--color);
+              background-color: var(--background--color);
+
+            }
           }
         }
       }
     }
   }
-}

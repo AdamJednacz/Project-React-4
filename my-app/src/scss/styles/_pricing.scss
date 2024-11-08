@@ -54,39 +54,70 @@
         }
 
       }
-      .buttons{
+      .buttons {
         display: flex;
         justify-content: space-between;
         box-shadow: var(--box--shadow);
         border-radius: 15px;
-        margin:32px 0 ;
+        margin: 32px 0;
         width: 100%;
+        position: relative;
+        overflow: hidden;
 
-        @include desktop{
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width:calc(100%/3);
+          background-color: var(--button--background--color);
+          border-radius: 15px;
+          transition: transform 0.4s ease-in-out;
+          z-index: 0;
+        }
+
+        @include desktop {
           width: auto;
         }
-        button{
-          width: 33%;
+        &.active-group::before {
+          transform: translateX(0%);
+
+        }
+
+        &.active-gym::before {
+          transform: translateX(100%);
+
+        }
+
+        &.active-special::before {
+          transform: translateX(200%);
+
+        }
+
+        button {
+          display: inline-block;
+          position: relative;
+          width: 33.33%;
           font-weight: 600;
           font-size: 0.9rem;
           border-radius: 15px;
-          background-color:var(--background--color);
+          z-index: 1;
+          background-color: transparent;
+
           color: var(--button--hover--color);
-          padding:10px 20px ;
+          padding: 10px 20px;
           cursor: pointer;
           border: none;
           transition: all 0.3s ease-in-out;
         }
-        .active{
-          background-color: var(--button--hover--color);
-          color: var(--button--text--color);
-          scale: 1.1;
-          z-index: 100;
-        }
-        button:not(.active){
-          animation: zIndexHack 3000ms;
-        }
+      .active{
+        color: var(--button--text--color);
+        scale: 1.05;
       }
+
+      }
+
       .cards{
         display: flex;
         align-items: center;
@@ -212,10 +243,6 @@
       }
     }
   }
-}
-
-@keyframes zIndexHack {
-  0%,100%{z-index: 90;}
 }
 
 Link{

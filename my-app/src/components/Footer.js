@@ -5,8 +5,9 @@ import {faEnvelope, faLocationDot, faPhone} from "@fortawesome/free-solid-svg-ic
 import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons";
 import {Link as LinkR} from "react-router-dom";
 import img1 from "../assets/karta-multisport_classic.webp";
+import logo_w from "../assets/logo_white.png";
 
-const Footer = () => {
+const Footer = ({isDarkMode}) => {
 
     return (
         <footer>
@@ -14,7 +15,7 @@ const Footer = () => {
 
                 <div className="row">
                     <div className="col">
-                        <img className=" " src={logo} alt=""/>
+                        <LinkR className="logo" to="/"><img src={isDarkMode ? logo_w : logo} alt=""/></LinkR>
                         <p>Kolejowa 15A, 32-080 Zabierzów</p>
                         <div className="links">
                         <a

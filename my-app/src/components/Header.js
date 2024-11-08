@@ -1,17 +1,19 @@
 import React, {useEffect, useState} from 'react';
 import logo from "../assets/logo.png"
+import logo_w from "../assets/logo_white.png"
 import { Link } from 'react-scroll';
 import {Link as LinkR, useLocation, useNavigate} from "react-router-dom";
 
-const Header = ({pageType}) => {
+const Header = ({pageType, isDarkMode, toggleDarkMode}) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isSticky, setSticky] = useState(false);
-    const [isDarkMode,setDarkMode] = useState(false);
+
 
     const { pathname } = useLocation();
     const navigate = useNavigate();
     const handleOpenMenu = () => {
         setIsOpen(!isOpen);
+
     };
     const handleCloseMenu = () => {
         setIsOpen(false);
@@ -43,27 +45,13 @@ const Header = ({pageType}) => {
 
 
 
-    useEffect(() => {
-        const savedDarkMode = localStorage.getItem('darkmode') === 'true';
-        setDarkMode(savedDarkMode);
-        if (savedDarkMode) {
-            document.body.classList.add('darkmode');
-        }
-        console.log('Loaded dark mode from storage:', savedDarkMode);
-    }, []);
 
-    const toggleDarkMode = () => {
-        const newDarkMode = !isDarkMode;
-        setDarkMode(newDarkMode);
-        document.body.classList.toggle('darkmode', newDarkMode);
-        localStorage.setItem('darkmode', newDarkMode);
-    };
 
 
     return (
         <header className={`${isSticky ? 'sticky' : ''} ${pageType === "o_nas" ? 'about_us_header' : ''}${pageType === "grafik" ? 'table_header' : ''} ${pageType === "karty" ? 'cards_header' : ''}`}>
             <div className="container">
-                <LinkR className="logo" to="/"><img src={logo} alt=""/></LinkR>
+                <LinkR className="logo" to="/"><img src={isDarkMode ? logo_w : logo} alt=""/></LinkR>
 
                 <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={handleOpenMenu}>
                     <span className="bar"></span>

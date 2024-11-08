@@ -12,11 +12,12 @@
         border: 1px solid #ddd;
         padding: 12px;
         text-align: left;
+        color: var(--text--color);
       }
 
       th {
-        background-color: #0D0B0B;
-        color: #FFFFFF;
+        background-color: var(--primary--color);
+        color: var(--button--text--color);
         font-weight: bold;
       }
     }
@@ -49,10 +50,10 @@
 
           .time {
             font-weight: bold;
-            color: #555;
+            color: var(--text--color);
           }
           .activity {
-            color: #333;
+            color: var(--text--color);
             margin-left: 16px;
           }
         }

@@ -73,7 +73,7 @@ const Header = ({pageType, isDarkMode, toggleDarkMode}) => {
                     }}
                           className="menu_item">Cennik</Link>
                     <Link to="kontakt" smooth={true} duration={500} onClick={() => {
-                        handleNavigateAndScroll('contact');
+                        handleNavigateAndScroll('kontakt');
                         handleCloseMenu();
                     }}
                           className="menu_item">Kontakt</Link>

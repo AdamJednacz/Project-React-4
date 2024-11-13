@@ -5,7 +5,7 @@
   }
   .container{
     flex-direction: column;
-    overflow: hidden;
+
     .text{
       text-align: center;
       margin-bottom: 32px;
@@ -26,25 +26,19 @@
     }
 
       .opinions_cards {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 90%;
+        max-width: 1200px;
         margin-bottom: 32px;
-        scroll-behavior: smooth;
         position: relative;
         transition: transform 0.5s ease;
-        width: 100%;
-        max-width: 100%;
         &_card {
-          flex: 0 0 232px;
           border: solid 1px var(--text--color);
           border-radius: 30px;
           padding: 24px;
-          max-width: 232px;
-           box-sizing: border-box;
-          margin: 0 16px;
-          color: var(--text--color);
 
+          width: 232px;
+           box-sizing: border-box;
+          color: var(--text--color);
           h2 {
             font-size: 1.5rem;
             font-weight: 700;

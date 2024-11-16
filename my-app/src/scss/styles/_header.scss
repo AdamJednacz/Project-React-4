@@ -21,6 +21,7 @@ header{
     }
     &.about_us_header{
       background: linear-gradient(to left, var(--gradient--bg) 0%, transparent 0%);
+
     }
     &.table_header{
       background: linear-gradient(to left, var(--gradient--bg) 0%, transparent 0%);
@@ -29,6 +30,22 @@ header{
       background: linear-gradient(to left, var(--gradient--bg) 0%, transparent 0%);
 
     }
+
+    &.about_us_header,&.table_header,&.cards_header{
+      .theme__toggle:checked{
+        background-color: #FFFFFF;
+      }
+
+      .theme__toggle:checked:before{
+        background-color: #0D0B0B;
+      }
+      .theme__toggle:checked ~ .theme__icon .theme__icon-part {
+        box-shadow: 0.2em -0.2em 0 0.2em #ffffff inset ;
+        transform: scale(1);
+
+      }
+    }
+
   }
   .container{
     gap: 16px;
@@ -330,6 +347,7 @@ header{
 .theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(1) {
   box-shadow: 0.2em -0.2em 0 0.2em var(--background--color) inset;
   transform: scale(1);
+
 }
 .theme__toggle:checked ~ .theme__icon .theme__icon-part ~ .theme__icon-part {
   opacity: 0;

@@ -31,7 +31,9 @@
         margin-bottom: 32px;
         position: relative;
         transition: transform 0.5s ease;
+
         &_card {
+
           border: solid 1px var(--text--color);
           border-radius: 30px;
           padding: 24px;

@@ -190,7 +190,7 @@ header{
   }
 
   .contact:hover {
-    border: solid 1px var(--background--color);
+    border: solid 1px var(--button--hover--color);
     background-color: var(--background--color);
     color: var(--button--hover--color);
   }

@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import { Link as LinkR } from "react-router-dom";
 import {Link} from "react-scroll";
+import useScrollAnimation from "./useScroolAnimation";
 const Pricing = () => {
     const [activeSection, setActiveSection] = useState('gym'); // Default section
-
+    useScrollAnimation(".cards");
     return (
         <section id="pricing">
             <div className="container">

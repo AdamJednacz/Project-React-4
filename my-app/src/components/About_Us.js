@@ -5,8 +5,9 @@ import img3 from "../assets/img_women.avif"
 import {faDumbbell} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Questions from "./Questions";
+import useScrollAnimation from "./useScroolAnimation";
 const AboutUs = () => {
-
+    useScrollAnimation(".row");
     return (
         <section className="about_us">
             <div className="container">
@@ -27,7 +28,6 @@ const AboutUs = () => {
                 <div className="row">
                     <img className="img2" src={img2} alt=""/>
                     <div className="text">
-
                         <p>Power & Beauty to nie tylko miejsce, to społeczność,która zapewnia naszym Klientom doskonałe
                             warunki do treningów,progresów oraz pokonywania swoich ograniczeń
                         Zapraszamy wszystkich! Panie i panów, dziewczęta i chłopców, młodych i starszych.
@@ -37,10 +37,8 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className="row">
-
                     <h2>Sprawdźcie co nasze studio ma do zaoferowania</h2>
                     <p className="p_row">Siłownia Power & Beauty posiada:</p>
-
                     <ul>
                         <li>250 m<sup>2</sup> przestrzeni sportowej,</li>
                         <li>strefa treningów grupowych,</li>
@@ -58,7 +56,6 @@ const AboutUs = () => {
                             <div
                                 key={index}
                                 className="card"
-
                             >
                                 <img src={img3} alt=""/>
                                 <div className="card-content">

@@ -55,8 +55,8 @@
           align-items: flex-start;
           justify-content: center;
           margin-bottom: 32px;
-          transition: all 0.3s ease-in-out;
           max-width: 300px;
+
           @include desktop{
             align-items: center;
             min-width: 360px;
@@ -65,6 +65,7 @@
           }
           &:hover{
             scale: 1.05;
+
           }
           img{
             margin-right: 16px;

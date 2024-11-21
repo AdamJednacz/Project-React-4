@@ -2,10 +2,13 @@ import React, { useRef, useState } from 'react';
 import bg from '../assets/contact_bg.png';
 import { faArrowsRotate, faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import useScrollAnimation from "./useScroolAnimation";
 
 const Contact = () => {
     const buttonRef = useRef(null);
     const [isError, setIsError] = useState(false);
+
+    useScrollAnimation(".text , .form");
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -43,7 +46,7 @@ const Contact = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
                 </div>
-                <form onSubmit={handleSubmit}>
+                <form className="form" onSubmit={handleSubmit}>
                     <h1>Napisz do nas!</h1>
                     <div className="row">
                         <input type="text" id="name" name="name" placeholder="Imię" required />

@@ -1,5 +1,4 @@
 
-
 header{
   padding: 24px 0 ;
   position: sticky;
@@ -14,21 +13,18 @@ header{
   }
   @include desktop{
     background: linear-gradient(to left, var(--gradient--bg) 25%, transparent 20%);
-;
     position: unset;
     &.sticky{
       box-shadow: unset
     }
     &.about_us_header{
       background: linear-gradient(to left, var(--gradient--bg) 0%, transparent 0%);
-
     }
     &.table_header{
       background: linear-gradient(to left, var(--gradient--bg) 0%, transparent 0%);
     }
     &.cards_header{
       background: linear-gradient(to left, var(--gradient--bg) 0%, transparent 0%);
-
     }
 
     &.about_us_header,&.table_header,&.cards_header{
@@ -42,7 +38,6 @@ header{
       .theme__toggle:checked ~ .theme__icon .theme__icon-part {
         box-shadow: 0.2em -0.2em 0 0.2em #ffffff inset ;
         transform: scale(1);
-
       }
     }
 
@@ -83,10 +78,6 @@ header{
       display: block;
       width: 100%;
       max-width: 140px;
-      @include desktop{
-
-
-      }
       img{
         display: block;
         max-width: 140px;
@@ -133,7 +124,6 @@ header{
         overflow: unset;
         width: auto;
       }
-
 
       &_item {
         font-size: 1.5rem;
@@ -194,11 +184,8 @@ header{
     background-color: var(--background--color);
     color: var(--button--hover--color);
   }
-
-
   }
   }
-
 }
 
 :root {
@@ -210,9 +197,8 @@ header{
   --transDur: 0.3s;
 }
 
-/* Default */
-.theme {
 
+.theme {
   display: none;
   @include desktop {
     display: flex;
@@ -220,8 +206,6 @@ header{
     -webkit-tap-highlight-color: transparent;
   }
 }
-
-
 
 
 .theme__icon {
@@ -244,7 +228,6 @@ header{
   height: 1.5em;
 }
 .theme__icon-part {
-
   border-radius: 50%;
   box-shadow: 0.4em -0.4em 0 0.5em hsl(0,0%,100%) inset;
   top: calc(50% - 0.5em);

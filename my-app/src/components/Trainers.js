@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import img1 from "../assets/trainers_1.png"
 import img2 from "../assets/trainers_2.png"
 import { Link as LinkR } from "react-router-dom";
+import useScrollAnimation from "./useScroolAnimation";
 
 
 const Trainers = () => {
+
+    useScrollAnimation(".trainers__cards");
+
     return (
         <section id="trainers">
             <div className="container">

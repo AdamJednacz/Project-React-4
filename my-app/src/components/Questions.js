@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useScrollAnimation from "./useScroolAnimation";
 
 const Questions = () => {
     const [activeIndex, setActiveIndex] = useState(null); // Track active card index
@@ -6,7 +7,7 @@ const Questions = () => {
     const handleSetActive = (index) => {
         setActiveIndex(activeIndex === index ? null : index); // Toggle active state
     };
-
+    useScrollAnimation(".questions");
     const questions = [
         {
             question: "OD CZEGO ZACZĄĆ NA SIŁOWNI?",

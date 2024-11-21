@@ -3,7 +3,11 @@ import React from 'react';
 import img1 from "../assets/coaches_1.png"
 import img2 from "../assets/coaches_2.png"
 import {Link as LinkR} from "react-router-dom";
+import useScrollAnimation from "./useScroolAnimation";
 const Coaches = () => {
+
+    useScrollAnimation(".coaches_imgs , .text");
+
     return (
         <section id="coaches">
             <div className="container">

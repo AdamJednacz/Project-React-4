@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import icon_1 from "../assets/icon_1.png"
 import icon_2 from "../assets/icon_2.png"
 import icon_3 from "../assets/icon_3.png"
@@ -7,9 +7,14 @@ import icon_4 from "../assets/icon_4.png"
 import img_1 from "../assets/why_us_1.png"
 import img_2 from "../assets/why_us_2.png"
 import img_3 from "../assets/why_us_3.png"
+import useScrollAnimation from "./useScroolAnimation";
 
 
 const WhyUs = () => {
+
+    useScrollAnimation(".why_us__content__cards__card, .why_us__content__imgs img");
+
+
     return (
         <section id="why_us">
             <div className="container">

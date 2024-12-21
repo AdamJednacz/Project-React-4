@@ -54,19 +54,31 @@ h3{
         padding: 24px;
         max-width: 50%;
       }
-      h2 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        line-height: 32px;
-        color: #FFFFFF;
-        position: relative;
+      .question__card__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 32px;
+          color: #FFFFFF;
+          position: relative;
 
-        @include desktop {
-          font-size: 2rem;
-          line-height: 48px;
+          @include desktop {
+            font-size: 2rem;
+            line-height: 48px;
+          }
+
+
         }
-
-
+        &__plus{
+          font-size: 2rem;
+          transition: rotate ease-in-out 0.25s;
+          &.rotate{
+           rotate: 45deg;
+          }
+        }
       }
 
 
@@ -94,6 +106,7 @@ h3{
         height: auto;
         visibility: visible;
         margin-top: 16px;
+
       }
       }
 
@@ -101,3 +114,5 @@ h3{
 
   }
 }
+
+

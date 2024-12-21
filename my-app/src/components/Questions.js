@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import useScrollAnimation from "./useScroolAnimation";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPlus} from "@fortawesome/free-solid-svg-icons";
 
 const Questions = () => {
     const [activeIndex, setActiveIndex] = useState(null); // Track active card index
@@ -61,10 +63,14 @@ const Questions = () => {
                         onClick={() => handleSetActive(index)}
                         className={`question__card ${activeIndex === index ? 'active' : ''}`}
                     >
+                        <div className="question__card__title">
                         <h2>{q.question}</h2>
+                        <FontAwesomeIcon className={`question__card__title__plus ${activeIndex === index ? 'rotate' : ''}`} icon={faPlus} />
+                        </div>
                         <p className={`question__card__p ${activeIndex === index ? 'active' : ''}`}>
                             {q.answer}
                         </p>
+
                     </div>
                 ))}
             </div>

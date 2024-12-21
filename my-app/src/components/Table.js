@@ -9,6 +9,7 @@ const Table = () => {
             { time: "20:00", activity: "Zdrowy Kręgosłup (Justyna)" },
         ],
         "Wtorek": [
+            { time: "08:00", activity: "ABT brzuch,pośladki,uda (Kuba,Łukasz)" },
             { time: "18:00", activity: "Trening Funkcjonalny (Kuba)" },
             { time: "19:00", activity: "Zumba (Natalia)" },
             { time: "20:00", activity: "Brzuch, Uda, Pośladki (Natalia)" },
@@ -16,14 +17,15 @@ const Table = () => {
         "Środa": [
             { time: "18:00", activity: "Tabata (Kuba)" },
             { time: "19:00", activity: "Joga (Janek)" },
-            { time: "20:00", activity: "Boks (Bartosz)" },
         ],
         "Czwartek": [
+            { time: "08:00", activity: "ABT brzuch,pośladki,uda (Kuba,Łukasz)" },
             { time: "18:00", activity: "Trening Funkcjonalny (Kuba)" },
             { time: "19:00", activity: "Zumba (Natalia)" },
             { time: "20:00", activity: "Stepy (Natalia)" },
         ],
         "Piątek": [
+
             { time: "18:00", activity: "Mocny Brzuch (Justyna)" },
             { time: "19:00", activity: "Zdrowy Kręgosłup (Justyna)" },
             { time: "20:00", activity: "Zdrowy Kręgosłup (Justyna)" },
@@ -46,7 +48,7 @@ const Table = () => {
                     </tr>
                     </thead>
                     <tbody>
-                    {[...new Set(Object.values(schedule).flat().map(item => item.time))].map(time => (
+                    {[...new Set(Object.values(schedule).flat().map(item => item.time))].sort().map(time => (
                         <tr key={time}>
                             <td>{time}</td>
                             {Object.keys(schedule).map(day => (

@@ -88,16 +88,13 @@ h3{
         overflow: clip;
         visibility: hidden;
         interpolate-size:allow-keywords;
-        transition: height 1s ease-in-out,visibility 1s ,margin-top 1s;
+        transition: height 0.5s ease-in-out,visibility 0.5s ,margin-top 0.5s;
       &.active{
         background-color: transparent;
         height: auto;
         visibility: visible;
         margin-top: 16px;
-
-
       }
-
       }
 
     }
